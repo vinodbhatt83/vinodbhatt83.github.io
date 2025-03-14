@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8F9FA" rx="8" ry="8"/>
+  
+  <!-- Chart Grid -->
+  <g stroke="#DEE2E6" stroke-width="1">
+    <line x1="60" y1="350" x2="750" y2="350"/>
+    <line x1="60" y1="300" x2="750" y2="300"/>
+    <line x1="60" y1="250" x2="750" y2="250"/>
+    <line x1="60" y1="200" x2="750" y2="200"/>
+    <line x1="60" y1="150" x2="750" y2="150"/>
+    <line x1="60" y1="100" x2="750" y2="100"/>
+    <line x1="60" y1="50" x2="750" y2="50"/>
+  </g>
+  
+  <!-- Y-Axis -->
+  <g fill="#6C757D" font-family="Inter, sans-serif" font-size="12">
+    <text x="30" y="350" text-anchor="end">0%</text>
+    <text x="30" y="300" text-anchor="end">20%</text>
+    <text x="30" y="250" text-anchor="end">40%</text>
+    <text x="30" y="200" text-anchor="end">60%</text>
+    <text x="30" y="150" text-anchor="end">80%</text>
+    <text x="30" y="100" text-anchor="end">100%</text>
+    <text x="30" y="50" text-anchor="end">120%</text>
+  </g>
+  
+  <!-- X-Axis -->
+  <g fill="#6C757D" font-family="Inter, sans-serif" font-size="12">
+    <text x="117" y="370" text-anchor="middle">2018</text>
+    <text x="231" y="370" text-anchor="middle">2019</text>
+    <text x="345" y="370" text-anchor="middle">2020</text>
+    <text x="459" y="370" text-anchor="middle">2021</text>
+    <text x="573" y="370" text-anchor="middle">2022</text>
+    <text x="687" y="370" text-anchor="middle">2023</text>
+  </g>
+  
+  <!-- RevPAR Index Line -->
+  <path d="M60,150 L117,145 L174,140 L231,135 L288,220 L345,260 L402,210 L459,180 L516,165 L573,150 L630,145 L687,140 L744,135" stroke="#2D5BFF" stroke-width="3" fill="none"/>
+  <g fill="#2D5BFF">
+    <circle cx="60" cy="150" r="4"/>
+    <circle cx="117" cy="145" r="4"/>
+    <circle cx="174" cy="140" r="4"/>
+    <circle cx="231" cy="135" r="4"/>
+    <circle cx="288" cy="220" r="4"/>
+    <circle cx="345" cy="260" r="4"/>
+    <circle cx="402" cy="210" r="4"/>
+    <circle cx="459" cy="180" r="4"/>
+    <circle cx="516" cy="165" r="4"/>
+    <circle cx="573" cy="150" r="4"/>
+    <circle cx="630" cy="145" r="4"/>
+    <circle cx="687" cy="140" r="4"/>
+    <circle cx="744" cy="135" r="4"/>
+  </g>
+  
+  <!-- Occupancy Line -->
+  <path d="M60,160 L117,155 L174,145 L231,140 L288,250 L345,270 L402,220 L459,190 L516,170 L573,160 L630,155 L687,150 L744,145" stroke="#FFB800" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <g fill="#FFB800">
+    <circle cx="60" cy="160" r="4"/>
+    <circle cx="117" cy="155" r="4"/>
+    <circle cx="174" cy="145" r="4"/>
+    <circle cx="231" cy="140" r="4"/>
+    <circle cx="288" cy="250" r="4"/>
+    <circle cx="345" cy="270" r="4"/>
+    <circle cx="402" cy="220" r="4"/>
+    <circle cx="459" cy="190" r="4"/>
+    <circle cx="516" cy="170" r="4"/>
+    <circle cx="573" cy="160" r="4"/>
+    <circle cx="630" cy="155" r="4"/>
+    <circle cx="687" cy="150" r="4"/>
+    <circle cx="744" cy="145" r="4"/>
+  </g>
+  
+  <!-- ADR Line -->
+  <path d="M60,140 L117,135 L174,130 L231,125 L288,190 L345,200 L402,170 L459,150 L516,140 L573,130 L630,125 L687,120 L744,115" stroke="#00C2B7" stroke-width="3" fill="none" stroke-dasharray="2,2"/>
+  <g fill="#00C2B7">
+    <circle cx="60" cy="140" r="4"/>
+    <circle cx="117" cy="135" r="4"/>
+    <circle cx="174" cy="130" r="4"/>
+    <circle cx="231" cy="125" r="4"/>
+    <circle cx="288" cy="190" r="4"/>
+    <circle cx="345" cy="200" r="4"/>
+    <circle cx="402" cy="170" r="4"/>
+    <circle cx="459" cy="150" r="4"/>
+    <circle cx="516" cy="140" r="4"/>
+    <circle cx="573" cy="130" r="4"/>
+    <circle cx="630" cy="125" r="4"/>
+    <circle cx="687" cy="120" r="4"/>
+    <circle cx="744" cy="115" r="4"/>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="530" y="20" width="210" height="80" fill="white" stroke="#DEE2E6" rx="4" ry="4"/>
+  <line x1="550" y1="40" x2="580" y2="40" stroke="#2D5BFF" stroke-width="3"/>
+  <circle cx="565" cy="40" r="4" fill="#2D5BFF"/>
+  <text x="590" y="44" font-family="Inter, sans-serif" font-size="12" fill="#343A40">RevPAR Index</text>
+  <line x1="550" y1="60" x2="580" y2="60" stroke="#FFB800" stroke-width="3" stroke-dasharray="5,5"/>
+  <circle cx="565" cy="60" r="4" fill="#FFB800"/>
+  <text x="590" y="64" font-family="Inter, sans-serif" font-size="12" fill="#343A40">Occupancy</text>
+  <line x1="550" y1="80" x2="580" y2="80" stroke="#00C2B7" stroke-width="3" stroke-dasharray="2,2"/>
+  <circle cx="565" cy="80" r="4" fill="#00C2B7"/>
+  <text x="590" y="84" font-family="Inter, sans-serif" font-size="12" fill="#343A40">ADR</text>
+</svg>

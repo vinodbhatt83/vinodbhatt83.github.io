@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="400px" height="250px" viewBox="0 0 400 250" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Model Usage by Type Chart</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#FFFFFF" x="0" y="0" width="400" height="250"></rect>
+        
+        <!-- Pie Chart -->
+        <g transform="translate(200, 120)">
+            <!-- Acquisition Slice (45%) -->
+            <path d="M0,0 L0,-80 A80,80 0 0,1 80,0 Z" fill="#2D5BFF"></path>
+            
+            <!-- Development Slice (20%) -->
+            <path d="M0,0 L80,0 A80,80 0 0,1 24.7214,76.0845 Z" fill="#2A9D8F"></path>
+            
+            <!-- Refinance Slice (15%) -->
+            <path d="M0,0 L24.7214,76.0845 A80,80 0 0,1 -45.6149,65.7983 Z" fill="#E9C46A"></path>
+            
+            <!-- Valuation Slice (20%) -->
+            <path d="M0,0 L-45.6149,65.7983 A80,80 0 0,1 -80,0 Z" fill="#E76F51"></path>
+            
+            <!-- Complete the circle (goes back to the starting point) -->
+            <path d="M0,0 L-80,0 A80,80 0 0,1 0,-80 Z" fill="#84A98C"></path>
+        </g>
+        
+        <!-- Legend -->
+        <g transform="translate(300, 80)">
+            <!-- Acquisition -->
+            <rect x="0" y="0" width="12" height="12" fill="#2D5BFF"></rect>
+            <text x="20" y="10" font-family="Inter, sans-serif" font-size="12" fill="#333F48">Acquisition (45%)</text>
+            
+            <!-- Development -->
+            <rect x="0" y="25" width="12" height="12" fill="#2A9D8F"></rect>
+            <text x="20" y="35" font-family="Inter, sans-serif" font-size="12" fill="#333F48">Development (20%)</text>
+            
+            <!-- Refinance -->
+            <rect x="0" y="50" width="12" height="12" fill="#E9C46A"></rect>
+            <text x="20" y="60" font-family="Inter, sans-serif" font-size="12" fill="#333F48">Refinance (15%)</text>
+            
+            <!-- Valuation -->
+            <rect x="0" y="75" width="12" height="12" fill="#E76F51"></rect>
+            <text x="20" y="85" font-family="Inter, sans-serif" font-size="12" fill="#333F48">Valuation (10%)</text>
+            
+            <!-- Other -->
+            <rect x="0" y="100" width="12" height="12" fill="#84A98C"></rect>
+            <text x="20" y="110" font-family="Inter, sans-serif" font-size="12" fill="#333F48">Other (10%)</text>
+        </g>
+        
+        <!-- Chart Title -->
+        <text x="200" y="30" font-family="Inter, sans-serif" font-size="14" font-weight="600" fill="#333F48" text-anchor="middle">Model Usage by Type</text>
+    </g>
+</svg>

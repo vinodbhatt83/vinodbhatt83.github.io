@@ -1,0 +1,668 @@
+<!-- task-management.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Management - INVEST PLATFORM</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/task-management.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="logo">
+                <span>INVEST PLATFORM</span>
+            </div>
+            <div class="top-nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                stroke="#6C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="user-menu">
+                    <img src="images/icons/user.svg" alt="User" class="user-avatar">
+                    <span>John Smith</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="#6C757D" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Side Navigation -->
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pipeline.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                            Pipeline
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M16 2V6M8 2V6M3 10H21M8 14H8.01M12 14H12.01M16 14H16.01M8 18H8.01M12 18H12.01M16 18H16.01"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li>
+                        <a href="document-processing.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 12H15M9 16H15M9 8H15M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Documents
+                        </a>
+                    </li>
+                    <li>
+                        <a href="models.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 7V4H20V7M4 11V17C4 19.2091 5.79086 21 8 21H16C18.2091 21 20 19.2091 20 17V11M12 8V16M8 12H16"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Models
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="task-management.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 11L12 14L22 4M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Task Management Content -->
+            <div class="content-area">
+                <div class="page-header">
+                    <div class="page-title">
+                        <h1>TASK MANAGEMENT</h1>
+                        <p>Organize your workflow and deadlines</p>
+                    </div>
+                    <div class="page-actions">
+                        <button class="btn btn-primary" id="create-task-btn">+ Create Task</button>
+                    </div>
+                </div>
+
+                <div class="tasks-controls">
+                    <div class="tasks-filters">
+                        <div class="filter-group">
+                            <label for="status-filter">Status</label>
+                            <select id="status-filter" class="filter-select">
+                                <option value="all">All Statuses</option>
+                                <option value="open">Open</option>
+                                <option value="in-progress">In Progress</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="assignee-filter">Assignee</label>
+                            <select id="assignee-filter" class="filter-select">
+                                <option value="all">All Assignees</option>
+                                <option value="me">Assigned to Me</option>
+                                <option value="unassigned">Unassigned</option>
+                                <option value="js">John Smith</option>
+                                <option value="sj">Sarah Johnson</option>
+                                <option value="mc">Michael Chen</option>
+                                <option value="er">Emily Rodriguez</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="related-filter">Related To</label>
+                            <select id="related-filter" class="filter-select">
+                                <option value="all">All Items</option>
+                                <option value="deals">Deals</option>
+                                <option value="properties">Properties</option>
+                                <option value="general">General</option>
+                            </select>
+                        </div>
+                        <div class="filter-group">
+                            <label for="priority-filter">Priority</label>
+                            <select id="priority-filter" class="filter-select">
+                                <option value="all">All Priorities</option>
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="tasks-search">
+                        <input type="text" placeholder="Search tasks..." class="search-input">
+                    </div>
+                </div>
+
+                <div class="tasks-view-options">
+                    <div class="view-tabs">
+                        <button class="view-tab active" data-view="list">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8 6H21M8 12H21M8 18H21M3 6H3.01M3 12H3.01M3 18H3.01" stroke="currentColor"
+                                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            List View
+                        </button>
+                        <button class="view-tab" data-view="board">
+                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 5C4 4.44772 4.44772 4 5 4H9C9.55228 4 10 4.44772 10 5V9C10 9.55228 9.55228 10 9 10H5C4.44772 10 4 9.55228 4 9V5Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M14 5C14 4.44772 14.4477 4 15 4H19C19.5523 4 20 4.44772 20 5V9C20 9.55228 19.5523 10 19 10H15C14.4477 10 14 9.55228 14 9V5Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M4 15C4 14.4477 4.44772 14 5 14H9C9.55228 14 10 14.4477 10 15V19C10 19.5523 9.55228 20 9 20H5C4.44772 20 4 19.5523 4 19V15Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                                <path
+                                    d="M14 15C14 14.4477 14.4477 14 15 14H19C19.5523 14 20 14.4477 20 15V19C20 19.5523 19.5523 20 19 20H15C14.4477 20 14 19.5523 14 19V15Z"
+                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" />
+                            </svg>
+                            Board View
+                        </button>
+                    </div>
+                    <div class="view-actions">
+                        <div class="sort-control">
+                            <label for="sort-by">Sort By:</label>
+                            <select id="sort-by" class="sort-select">
+                                <option value="due-date">Due Date</option>
+                                <option value="priority">Priority</option>
+                                <option value="created">Date Created</option>
+                                <option value="updated">Last Updated</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tasks-container">
+                    <!-- List View (default) -->
+                    <div class="tasks-list-view">
+                        <table class="tasks-table">
+                            <thead>
+                                <tr>
+                                    <th class="task-status-col"></th>
+                                    <th class="task-title-col">Task</th>
+                                    <th class="task-assignee-col">Assignee</th>
+                                    <th class="task-priority-col">Priority</th>
+                                    <th class="task-due-col">Due Date</th>
+                                    <th class="task-related-col">Related To</th>
+                                    <th class="task-actions-col"></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr class="task-row">
+                                    <td class="task-status">
+                                        <span class="status-indicator status-open"></span>
+                                    </td>
+                                    <td class="task-title">
+                                        <div class="task-title-wrapper">
+                                            <span class="task-name">Review updated underwriting for Hampton Inn &
+                                                Suites</span>
+                                            <span class="task-description">Check revised assumptions and provide
+                                                feedback</span>
+                                        </div>
+                                    </td>
+                                    <td class="task-assignee">
+                                        <div class="user-avatar" title="John Smith">JS</div>
+                                    </td>
+                                    <td class="task-priority">
+                                        <span class="priority-badge priority-high">High</span>
+                                    </td>
+                                    <td class="task-due">
+                                        <span class="due-date due-soon">Tomorrow</span>
+                                    </td>
+                                    <td class="task-related">
+                                        <a href="deal-underwriting.html" class="related-item">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            Hampton Inn & Suites
+                                        </a>
+                                    </td>
+                                    <td class="task-actions">
+                                        <button class="btn-icon task-edit">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="task-row">
+                                    <td class="task-status">
+                                        <span class="status-indicator status-in-progress"></span>
+                                    </td>
+                                    <td class="task-title">
+                                        <div class="task-title-wrapper">
+                                            <span class="task-name">Prepare IC presentation for Courtyard by
+                                                Marriott</span>
+                                            <span class="task-description">Create investment committee slides with key
+                                                metrics and recommendations</span>
+                                        </div>
+                                    </td>
+                                    <td class="task-assignee">
+                                        <div class="user-avatar" title="Sarah Johnson">SJ</div>
+                                    </td>
+                                    <td class="task-priority">
+                                        <span class="priority-badge priority-high">High</span>
+                                    </td>
+                                    <td class="task-due">
+                                        <span class="due-date due-soon">3 days</span>
+                                    </td>
+                                    <td class="task-related">
+                                        <a href="deal-underwriting.html" class="related-item">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            Courtyard by Marriott
+                                        </a>
+                                    </td>
+                                    <td class="task-actions">
+                                        <button class="btn-icon task-edit">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="task-row">
+                                    <td class="task-status">
+                                        <span class="status-indicator status-open"></span>
+                                    </td>
+                                    <td class="task-title">
+                                        <div class="task-title-wrapper">
+                                            <span class="task-name">Schedule site visit for Hilton Garden Inn</span>
+                                            <span class="task-description">Coordinate with property management and team
+                                                members</span>
+                                        </div>
+                                    </td>
+                                    <td class="task-assignee">
+                                        <div class="user-avatar" title="Michael Chen">MC</div>
+                                    </td>
+                                    <td class="task-priority">
+                                        <span class="priority-badge priority-medium">Medium</span>
+                                    </td>
+                                    <td class="task-due">
+                                        <span class="due-date">1 week</span>
+                                    </td>
+                                    <td class="task-related">
+                                        <a href="deal-underwriting.html" class="related-item">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            Hilton Garden Inn
+                                        </a>
+                                    </td>
+                                    <td class="task-actions">
+                                        <button class="btn-icon task-edit">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="task-row">
+                                    <td class="task-status">
+                                        <span class="status-indicator status-open"></span>
+                                    </td>
+                                    <td class="task-title">
+                                        <div class="task-title-wrapper">
+                                            <span class="task-name">Review PIP estimates for Hampton Inn & Suites</span>
+                                            <span class="task-description">Validate cost estimates and construction
+                                                timeline</span>
+                                        </div>
+                                    </td>
+                                    <td class="task-assignee">
+                                        <div class="user-avatar" title="Emily Rodriguez">ER</div>
+                                    </td>
+                                    <td class="task-priority">
+                                        <span class="priority-badge priority-medium">Medium</span>
+                                    </td>
+                                    <td class="task-due">
+                                        <span class="due-date">1 week</span>
+                                    </td>
+                                    <td class="task-related">
+                                        <a href="deal-underwriting.html" class="related-item">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            Hampton Inn & Suites
+                                        </a>
+                                    </td>
+                                    <td class="task-actions">
+                                        <button class="btn-icon task-edit">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="task-row">
+                                    <td class="task-status">
+                                        <span class="status-indicator status-open"></span>
+                                    </td>
+                                    <td class="task-title">
+                                        <div class="task-title-wrapper">
+                                            <span class="task-name">Follow up with broker regarding Hilton Garden
+                                                Inn</span>
+                                            <span class="task-description">Discuss recent market comps and comparable
+                                                cap rates</span>
+                                        </div>
+                                    </td>
+                                    <td class="task-assignee">
+                                        <div class="user-avatar" title="John Smith">JS</div>
+                                    </td>
+                                    <td class="task-priority">
+                                        <span class="priority-badge priority-low">Low</span>
+                                    </td>
+                                    <td class="task-due">
+                                        <span class="due-date">2 weeks</span>
+                                    </td>
+                                    <td class="task-related">
+                                        <a href="deal-underwriting.html" class="related-item">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            Hilton Garden Inn
+                                        </a>
+                                    </td>
+                                    <td class="task-actions">
+                                        <button class="btn-icon task-edit">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                                <tr class="task-row">
+                                    <td class="task-status">
+                                        <span class="status-indicator status-completed"></span>
+                                    </td>
+                                    <td class="task-title">
+                                        <div class="task-title-wrapper">
+                                            <span class="task-name">Process STR report for Courtyard by Marriott</span>
+                                            <span class="task-description">Extract key metrics and update underwriting
+                                                model</span>
+                                        </div>
+                                    </td>
+                                    <td class="task-assignee">
+                                        <div class="user-avatar" title="Sarah Johnson">SJ</div>
+                                    </td>
+                                    <td class="task-priority">
+                                        <span class="priority-badge priority-high">High</span>
+                                    </td>
+                                    <td class="task-due">
+                                        <span class="due-date completed">Completed</span>
+                                    </td>
+                                    <td class="task-related">
+                                        <a href="deal-underwriting.html" class="related-item">
+                                            <svg width="14" height="14" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+                                            </svg>
+                                            Courtyard by Marriott
+                                        </a>
+                                    </td>
+                                    <td class="task-actions">
+                                        <button class="btn-icon task-edit">
+                                            <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                    stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                            </svg>
+                                        </button>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+
+                    <!-- Board View (hidden by default) -->
+                    <div class="tasks-board-view" style="display: none;">
+                        <div class="board-container">
+                            <div class="board-column">
+                                <div class="column-header">
+                                    <h3>Open</h3>
+                                    <span class="task-count">4</span>
+                                </div>
+                                <div class="column-tasks">
+                                    <!-- Task cards for OPEN status will be added here -->
+                                </div>
+                            </div>
+                            <div class="board-column">
+                                <div class="column-header">
+                                    <h3>In Progress</h3>
+                                    <span class="task-count">1</span>
+                                </div>
+                                <div class="column-tasks">
+                                    <!-- Task cards for IN PROGRESS status will be added here -->
+                                </div>
+                            </div>
+                            <div class="board-column">
+                                <div class="column-header">
+                                    <h3>Completed</h3>
+                                    <span class="task-count">1</span>
+                                </div>
+                                <div class="column-tasks">
+                                    <!-- Task cards for COMPLETED status will be added here -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="tasks-pagination">
+                    <button class="pagination-btn" disabled>
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M19 12H5M5 12L12 5M5 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Previous
+                    </button>
+                    <div class="pagination-info">Page 1 of 1</div>
+                    <button class="pagination-btn" disabled>
+                        Next
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M5 12H19M19 12L12 5M19 12L12 19" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Task Creation/Edit Modal -->
+    <div class="modal" id="task-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="task-modal-title">Create New Task</h2>
+                <button class="modal-close">&times;</button>
+            </div>
+            <div class="modal-body">
+                <form id="task-form">
+                    <div class="form-group">
+                        <label for="task-title-input">Task Title</label>
+                        <input type="text" id="task-title-input" placeholder="Enter task title" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-description-input">Description</label>
+                        <textarea id="task-description-input" placeholder="Enter task description"></textarea>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-assignee-input">Assignee</label>
+                            <select id="task-assignee-input">
+                                <option value="">Select assignee</option>
+                                <option value="js">John Smith</option>
+                                <option value="sj">Sarah Johnson</option>
+                                <option value="mc">Michael Chen</option>
+                                <option value="er">Emily Rodriguez</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="task-status-input">Status</label>
+                            <select id="task-status-input">
+                                <option value="open">Open</option>
+                                <option value="in-progress">In Progress</option>
+                                <option value="completed">Completed</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="task-priority-input">Priority</label>
+                            <select id="task-priority-input">
+                                <option value="high">High</option>
+                                <option value="medium">Medium</option>
+                                <option value="low">Low</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="task-due-input">Due Date</label>
+                            <input type="date" id="task-due-input">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="task-related-input">Related To</label>
+                        <select id="task-related-input">
+                            <option value="">None</option>
+                            <optgroup label="Deals">
+                                <option value="hampton">Hampton Inn & Suites</option>
+                                <option value="courtyard">Courtyard by Marriott</option>
+                                <option value="hilton">Hilton Garden Inn</option>
+                            </optgroup>
+                            <optgroup label="Properties">
+                                <option value="prop1">Property 1</option>
+                                <option value="prop2">Property 2</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <input type="hidden" id="task-id-input" value="">
+                </form>
+            </div>
+            <div class="modal-footer">
+                <button class="btn btn-secondary modal-cancel">Cancel</button>
+                <button class="btn btn-primary" id="save-task-btn">Save Task</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/task-management.js"></script>
+</body>
+
+</html>

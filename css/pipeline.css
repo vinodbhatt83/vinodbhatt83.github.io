@@ -1,0 +1,292 @@
+/* Pipeline CSS - Specific styling for the pipeline page */
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+}
+
+.filter-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray-700);
+    margin-right: var(--space-sm);
+    white-space: nowrap;
+}
+
+.filter-select {
+    min-width: 150px;
+    height: 36px;
+    padding: 0 var(--space-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%236C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9L12 15L18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right var(--space-md) center;
+    background-size: 12px;
+}
+
+.search-filter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-filter input {
+    width: 100%;
+    height: 36px;
+    padding: 0 var(--space-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+}
+
+/* Kanban Board */
+.kanban-board {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.kanban-column {
+    background-color: var(--gray-100);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    min-height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+.kanban-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 2px solid var(--gray-200);
+}
+
+.kanban-header h2 {
+    font-size: 14px;
+    font-weight: 600;
+    color: var(--gray-700);
+    margin: 0;
+}
+
+.deal-count {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--gray-300);
+    color: var(--gray-700);
+    font-size: 12px;
+    font-weight: 500;
+    width: 24px;
+    height: 24px;
+    border-radius: 12px;
+}
+
+.kanban-cards {
+    display: flex;
+    flex-direction: column;
+    gap: var(--space-md);
+    overflow-y: auto;
+    flex: 1;
+}
+
+/* Deal Cards */
+.deal-card {
+    background-color: var(--white);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+.deal-card:hover {
+    transform: translateY(-2px);
+    box-shadow: var(--shadow-md);
+}
+
+.card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    margin-bottom: var(--space-xs);
+}
+
+.card-header h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin: 0;
+}
+
+.deal-menu {
+    color: var(--gray-500);
+    font-weight: 500;
+    cursor: pointer;
+    user-select: none;
+}
+
+.deal-location {
+    color: var(--gray-600);
+    font-size: 14px;
+    margin-bottom: var(--space-sm);
+}
+
+.deal-metrics {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+}
+
+.metric {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--dark-navy);
+}
+
+.separator {
+    margin: 0 var(--space-xs);
+    color: var(--gray-400);
+}
+
+.progress-bar {
+    height: 6px;
+    background-color: var(--gray-200);
+    border-radius: 3px;
+    margin: var(--space-sm) 0;
+    overflow: hidden;
+}
+
+.progress {
+    height: 100%;
+    background-color: var(--primary-blue);
+    border-radius: 3px;
+}
+
+.tag-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-xs);
+    margin: var(--space-sm) 0;
+}
+
+.tag {
+    display: inline-flex;
+    padding: var(--space-xs) var(--space-sm);
+    background-color: var(--gray-200);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.tag-success {
+    background-color: rgba(0, 194, 183, 0.2);
+    color: var(--teal);
+}
+
+.tag-warning {
+    background-color: rgba(255, 184, 0, 0.2);
+    color: var(--gold-hover);
+}
+
+.tag-error {
+    background-color: rgba(255, 90, 95, 0.2);
+    color: var(--coral);
+}
+
+.deal-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: var(--space-sm);
+    font-size: 12px;
+}
+
+.deal-date {
+    color: var(--gray-600);
+}
+
+.assigned-to {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    width: 24px;
+    height: 24px;
+    background-color: var(--primary-blue);
+    color: var(--white);
+    font-size: 11px;
+    font-weight: 600;
+    border-radius: 12px;
+}
+
+/* Empty Column State */
+.empty-column {
+    justify-content: center;
+}
+
+.empty-state {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg);
+    color: var(--gray-500);
+    text-align: center;
+}
+
+.empty-state svg {
+    margin-bottom: var(--space-md);
+    opacity: 0.5;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+    .kanban-board {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .kanban-board {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group,
+    .search-filter {
+        width: 100%;
+    }
+
+    .filter-group {
+        margin-bottom: var(--space-sm);
+    }
+
+    .filter-select {
+        width: 100%;
+    }
+}

@@ -1,0 +1,386 @@
+/* scenario-comparison.css */
+
+/* Comparison Controls */
+.comparison-controls {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 16px 24px;
+    margin-bottom: 24px;
+}
+
+.comparison-selector {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.selector-group {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.selector-group label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #495057;
+}
+
+.selector-group select {
+    padding: 8px 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333F48;
+    min-width: 180px;
+}
+
+.view-controls {
+    display: flex;
+    align-items: center;
+}
+
+.view-toggle {
+    display: flex;
+    gap: 2px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 2px;
+}
+
+.view-btn {
+    padding: 8px 16px;
+    font-size: 14px;
+    font-weight: 500;
+    background: none;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.view-btn.active {
+    background-color: #2D5BFF;
+    color: white;
+}
+
+.view-btn:hover:not(.active) {
+    background-color: #e9ecef;
+    color: #495057;
+}
+
+/* Comparison Grid */
+.comparison-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-bottom: 24px;
+}
+
+/* Comparison Cards */
+.comparison-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    padding: 24px;
+}
+
+.comparison-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 16px 0;
+    color: #333F48;
+}
+
+/* Comparison Tables */
+.comparison-table-container {
+    overflow-x: auto;
+}
+
+.comparison-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.comparison-table th,
+.comparison-table td {
+    padding: 10px 12px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.comparison-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.comparison-table td {
+    color: #333F48;
+}
+
+.comparison-table .positive {
+    color: #28a745;
+}
+
+.comparison-table .negative {
+    color: #dc3545;
+}
+
+.metric-name,
+.assumption-name {
+    font-weight: 500;
+}
+
+.assumption-category {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+/* Chart Comparison */
+.chart-comparison .chart-controls {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 16px;
+}
+
+.metric-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.metric-selector label {
+    font-size: 14px;
+    color: #495057;
+}
+
+.metric-selector select {
+    padding: 6px 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333F48;
+}
+
+.chart-container {
+    height: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart-container img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+/* Sensitivity Analysis */
+.sensitivity-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.sensitivity-controls {
+    display: flex;
+    gap: 16px;
+}
+
+.sensitivity-selector,
+.sensitivity-metric-selector {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.sensitivity-selector label,
+.sensitivity-metric-selector label {
+    font-size: 14px;
+    color: #495057;
+}
+
+.sensitivity-selector select,
+.sensitivity-metric-selector select {
+    padding: 6px 10px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 13px;
+    color: #333F48;
+}
+
+.sensitivity-grid {
+    display: flex;
+    gap: 16px;
+}
+
+.sensitivity-heatmap {
+    flex-grow: 1;
+}
+
+.heatmap-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.heatmap-table th,
+.heatmap-table td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.heatmap-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.heatmap-table td:first-child {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.heatmap-cell {
+    font-weight: 600;
+}
+
+.heatmap-cell.high {
+    background-color: #a3cfbb;
+    color: #0f5132;
+}
+
+.heatmap-cell.medium-high {
+    background-color: #b9e6c9;
+    color: #0f5132;
+}
+
+.heatmap-cell.medium {
+    background-color: #d1e7dd;
+    color: #0f5132;
+}
+
+.heatmap-cell.medium-low {
+    background-color: #f8d7da;
+    color: #842029;
+}
+
+.heatmap-cell.low {
+    background-color: #f5c2c7;
+    color: #842029;
+}
+
+.sensitivity-legend {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    width: 120px;
+}
+
+.legend-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 12px;
+    color: #495057;
+}
+
+.legend-color {
+    width: 16px;
+    height: 16px;
+    border-radius: 3px;
+}
+
+.legend-color.high {
+    background-color: #a3cfbb;
+}
+
+.legend-color.medium-high {
+    background-color: #b9e6c9;
+}
+
+.legend-color.medium {
+    background-color: #d1e7dd;
+}
+
+.legend-color.medium-low {
+    background-color: #f8d7da;
+}
+
+.legend-color.low {
+    background-color: #f5c2c7;
+}
+
+.heatmap-labels {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    padding: 0 40px;
+}
+
+.x-axis-label,
+.y-axis-label {
+    font-size: 12px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+.y-axis-label {
+    transform: rotate(-90deg);
+    position: absolute;
+    left: -40px;
+    top: 50%;
+}
+
+/* AI Analysis */
+.ai-analysis {
+    grid-column: span 2;
+}
+
+.ai-insights {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.insight-item {
+    display: flex;
+    gap: 12px;
+    padding: 16px;
+    background-color: rgba(45, 91, 255, 0.05);
+    border-radius: 8px;
+    border-left: 3px solid #2D5BFF;
+}
+
+.insight-icon {
+    flex-shrink: 0;
+    color: #2D5BFF;
+}
+
+.insight-content {
+    font-size: 14px;
+    color: #333F48;
+    line-height: 1.5;
+}
+
+.insight-content strong {
+    color: #2D5BFF;
+    font-weight: 600;
+}
+
+/* Action Bar */
+.action-bar {
+    display: flex;
+    justify-content: flex-end;
+    gap: 16px;
+    margin-top: 24px;
+}

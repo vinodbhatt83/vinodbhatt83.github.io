@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg">
+    <title>Excel Logo</title>
+    <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <rect fill="#217346" x="0" y="0" width="48" height="48" rx="4"></rect>
+        <g transform="translate(6.000000, 6.000000)" fill="#FFFFFF" fill-rule="nonzero">
+            <path d="M23,0 L36,0 L36,36 L23,36 L23,0 Z M0,6 L20,6 L20,30 L0,30 L0,6 Z M15.1836,12.7632 L12.2392,18.0224 L15.336,23.3104 L12.7248,23.3104 L10.7136,19.8144 L8.7072,23.3104 L6.1776,23.3104 L9.2696,18.0272 L6.4128,12.7632 L8.9856,12.7632 L10.7616,15.9168 L12.504,12.7632 L15.1836,12.7632 Z"></path>
+        </g>
+    </g>
+</svg>

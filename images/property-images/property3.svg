@@ -1,0 +1,69 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Sky -->
+  <rect width="400" height="300" fill="#87CEFA"/>
+  
+  <!-- Ground -->
+  <rect width="400" height="50" y="250" fill="#8FBC8F"/>
+  
+  <!-- Main Building -->
+  <rect x="100" y="80" width="200" height="170" fill="#FFFFFF" stroke="#DDDDDD" stroke-width="1"/>
+  
+  <!-- Building Detail -->
+  <rect x="90" y="80" width="220" height="10" fill="#4D7031"/>
+  <rect x="100" y="80" width="200" height="20" fill="#4D7031"/>
+  
+  <!-- Windows -->
+  <g fill="#D4F0FF" stroke="#AAAAAA" stroke-width="1">
+    <!-- Row 1 -->
+    <rect x="120" y="110" width="20" height="25"/>
+    <rect x="150" y="110" width="20" height="25"/>
+    <rect x="180" y="110" width="20" height="25"/>
+    <rect x="210" y="110" width="20" height="25"/>
+    <rect x="240" y="110" width="20" height="25"/>
+    
+    <!-- Row 2 -->
+    <rect x="120" y="145" width="20" height="25"/>
+    <rect x="150" y="145" width="20" height="25"/>
+    <rect x="180" y="145" width="20" height="25"/>
+    <rect x="210" y="145" width="20" height="25"/>
+    <rect x="240" y="145" width="20" height="25"/>
+    
+    <!-- Row 3 -->
+    <rect x="120" y="180" width="20" height="25"/>
+    <rect x="150" y="180" width="20" height="25"/>
+    <rect x="180" y="180" width="20" height="25"/>
+    <rect x="210" y="180" width="20" height="25"/>
+    <rect x="240" y="180" width="20" height="25"/>
+  </g>
+  
+  <!-- Entrance -->
+  <rect x="160" y="215" width="60" height="35" fill="#4D7031"/>
+  <rect x="170" y="225" width="40" height="25" fill="#D4F0FF"/>
+  
+  <!-- Driveway -->
+  <path d="M190,250 L190,270 C160,270 140,270 120,280 L120,280 L190,280 L260,280 C240,270 220,270 190,270 Z" fill="#AAAAAA"/>
+  
+  <!-- Hotel Sign -->
+  <rect x="140" y="60" width="120" height="20" fill="#4D7031"/>
+  <text x="200" y="75" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">HILTON GARDEN</text>
+  
+  <!-- Landscaping -->
+  <circle cx="130" cy="255" r="10" fill="#228B22"/>
+  <circle cx="130" cy="245" r="8" fill="#228B22"/>
+  
+  <circle cx="250" cy="255" r="10" fill="#228B22"/>
+  <circle cx="250" cy="245" r="8" fill="#228B22"/>
+  
+  <rect x="140" y="240" width="8" height="10" fill="#8B4513"/>
+  <circle cx="144" cy="235" r="10" fill="#228B22"/>
+  
+  <rect x="230" y="240" width="8" height="10" fill="#8B4513"/>
+  <circle cx="234" cy="235" r="10" fill="#228B22"/>
+  
+  <!-- Sun -->
+  <circle cx="50" cy="50" r="20" fill="#FFD700"/>
+  
+  <!-- Birds -->
+  <path d="M300,70 L310,60 L320,70" stroke="#333333" stroke-width="1" fill="none"/>
+  <path d="M320,80 L330,70 L340,80" stroke="#333333" stroke-width="1" fill="none"/>
+</svg>

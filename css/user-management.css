@@ -1,0 +1,510 @@
+/* user-management.css */
+
+/* User Management Grid */
+.user-management-grid {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 24px;
+}
+
+/* Section Card Styling */
+.section-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+    margin-bottom: 24px;
+    overflow: hidden;
+}
+
+.section-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-header h2 {
+    margin: 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333F48;
+}
+
+.section-actions {
+    display: flex;
+    gap: 12px;
+    align-items: center;
+}
+
+/* Search and Filter Inputs */
+.search-input {
+    padding: 8px 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.filter-select {
+    padding: 8px 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+    min-width: 120px;
+}
+
+/* Users Table */
+.users-section {
+    grid-column: span 2;
+}
+
+.users-table-container {
+    overflow-x: auto;
+}
+
+.users-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.users-table th,
+.users-table td {
+    padding: 12px 16px;
+    text-align: left;
+    border-bottom: 1px solid #e9ecef;
+    font-size: 14px;
+}
+
+.users-table th {
+    background-color: #f8f9fa;
+    font-weight: 600;
+    color: #495057;
+}
+
+.users-table td {
+    color: #333F48;
+}
+
+/* User Cell */
+.user-cell {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.user-avatar {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background-color: #e9ecef;
+    color: #495057;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 600;
+    font-size: 14px;
+}
+
+.status-invited {
+    border: 2px solid #ffc107;
+}
+
+/* Role and Status Badges */
+.role-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.role-admin {
+    background-color: rgba(45, 91, 255, 0.1);
+    color: #2D5BFF;
+}
+
+.role-analyst {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.role-viewer {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: #6c757d;
+}
+
+.status-badge {
+    display: inline-block;
+    padding: 4px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 500;
+}
+
+.status-active {
+    background-color: rgba(40, 167, 69, 0.1);
+    color: #28a745;
+}
+
+.status-inactive {
+    background-color: rgba(108, 117, 125, 0.1);
+    color: #6c757d;
+}
+
+.status-invited {
+    background-color: rgba(255, 193, 7, 0.1);
+    color: #ffc107;
+}
+
+/* Actions Cell */
+.actions-cell {
+    display: flex;
+    gap: 8px;
+}
+
+.btn-icon {
+    background: none;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    color: #6c757d;
+}
+
+.btn-icon:hover {
+    background-color: #f8f9fa;
+    color: #2D5BFF;
+}
+
+/* Pagination */
+.pagination {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 24px;
+    border-top: 1px solid #e9ecef;
+}
+
+.pagination-btn {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding: 8px 16px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    background-color: white;
+    color: #495057;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.pagination-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.pagination-btn:not(:disabled):hover {
+    background-color: #f8f9fa;
+}
+
+.pagination-info {
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Teams Grid */
+.teams-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(240px, 1fr));
+    gap: 16px;
+    padding: 24px;
+}
+
+.team-card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+    position: relative;
+}
+
+.team-info h3 {
+    margin: 0 0 4px 0;
+    font-size: 16px;
+    font-weight: 600;
+    color: #333F48;
+}
+
+.team-info p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+.team-users {
+    display: flex;
+    gap: 8px;
+    margin-top: 16px;
+    flex-wrap: wrap;
+}
+
+.team-actions {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+}
+
+.create-team-card {
+    border: 2px dashed #e9ecef;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    padding: 24px 16px;
+}
+
+.create-team-card:hover {
+    background-color: #f8f9fa;
+    border-color: #ADB5BD;
+}
+
+.create-team-icon {
+    margin-bottom: 12px;
+    color: #ADB5BD;
+}
+
+.create-team-card p {
+    margin: 0;
+    font-size: 14px;
+    color: #6c757d;
+    font-weight: 500;
+}
+
+/* Roles Grid */
+.roles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 16px;
+    padding: 24px;
+}
+
+.role-card {
+    border: 1px solid #e9ecef;
+    border-radius: 8px;
+    padding: 16px;
+}
+
+.role-header {
+    margin-bottom: 16px;
+}
+
+.role-description p {
+    margin: 0 0 16px 0;
+    font-size: 14px;
+    color: #495057;
+    line-height: 1.5;
+}
+
+.role-permissions h4 {
+    margin: 0 0 8px 0;
+    font-size: 14px;
+    font-weight: 600;
+    color: #333F48;
+}
+
+.role-permissions ul {
+    margin: 0;
+    padding-left: 16px;
+    font-size: 14px;
+    color: #495057;
+}
+
+.role-permissions li {
+    margin-bottom: 4px;
+}
+
+.role-management-cta {
+    padding: 0 24px 24px;
+    text-align: center;
+}
+
+/* Activity Section */
+.activity-section {
+    grid-column: span 2;
+}
+
+.activity-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.activity-item {
+    display: flex;
+    align-items: center;
+    padding: 16px 24px;
+    border-bottom: 1px solid #e9ecef;
+}
+
+.activity-icon {
+    margin-right: 16px;
+    color: #6c757d;
+}
+
+.activity-content {
+    flex-grow: 1;
+    font-size: 14px;
+    color: #495057;
+}
+
+.activity-user {
+    font-weight: 500;
+    color: #333F48;
+}
+
+.activity-highlight {
+    font-weight: 500;
+    color: #2D5BFF;
+}
+
+.activity-time {
+    margin-left: 16px;
+    font-size: 14px;
+    color: #6c757d;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal.show {
+    display: flex;
+}
+
+.modal-content {
+    background-color: white;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.modal-header {
+    padding: 16px 24px;
+    border-bottom: 1px solid #e9ecef;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.modal-header h2 {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 600;
+    color: #333F48;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #6c757d;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 24px;
+}
+
+.modal-footer {
+    padding: 16px 24px;
+    border-top: 1px solid #e9ecef;
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+/* Form Styles */
+.form-group {
+    margin-bottom: 16px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
+    color: #333F48;
+}
+
+.form-group input[type="text"],
+.form-group input[type="email"],
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #333F48;
+}
+
+.form-group textarea {
+    min-height: 80px;
+    resize: vertical;
+}
+
+.members-selection {
+    border: 1px solid #e9ecef;
+    border-radius: 4px;
+    padding: 12px;
+}
+
+.selected-members {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+    min-height: 40px;
+}
+
+.selected-member {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    background-color: #f8f9fa;
+    border-radius: 4px;
+    padding: 4px 8px;
+    font-size: 14px;
+}
+
+.remove-member {
+    background: none;
+    border: none;
+    color: #6c757d;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+/* Utility Classes */
+.btn-sm {
+    padding: 6px 12px;
+    font-size: 14px;
+}

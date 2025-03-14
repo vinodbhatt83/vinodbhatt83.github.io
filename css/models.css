@@ -1,0 +1,364 @@
+/* Models Page Styles */
+.models-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin-bottom: 20px;
+}
+
+.model-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    transition: all 0.3s ease;
+    position: relative;
+    height: 300px;
+}
+
+.model-card:hover {
+    box-shadow: 0 6px 12px rgba(45, 91, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.model-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.model-header h3 {
+    margin: 0;
+    font-size: 18px;
+    color: #1A365D;
+    font-weight: 600;
+}
+
+.model-header .btn-icon {
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #6C757D;
+    transition: color 0.2s ease;
+}
+
+.model-header .btn-icon:hover {
+    color: #2D5BFF;
+}
+
+.model-info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    font-size: 14px;
+}
+
+.model-type, .model-property-type {
+    color: #627D98;
+}
+
+.model-description {
+    flex-grow: 1;
+    color: #334E68;
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 1.4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.model-meta {
+    display: flex;
+    justify-content: space-between;
+    color: #718096;
+    font-size: 12px;
+    margin-bottom: 15px;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.meta-item svg {
+    width: 14px;
+    height: 14px;
+}
+
+.model-actions-footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: auto;
+}
+
+.model-actions-footer .btn-sm {
+    padding: 6px 12px;
+    font-size: 12px;
+    border-radius: 4px;
+}
+
+.create-model-card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px dashed #ADB5BD;
+    background-color: #F8FAFC;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    height: 300px;
+}
+
+.create-model-card:hover {
+    border-color: #2D5BFF;
+    background-color: #F0F4FF;
+}
+
+.create-model-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #ADB5BD;
+}
+
+.create-model-content svg {
+    margin-bottom: 10px;
+}
+
+.models-tabs {
+    display: flex;
+    margin-bottom: 20px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.models-tab {
+    padding: 10px 15px;
+    cursor: pointer;
+    color: #718096;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    border-bottom: 2px solid transparent;
+}
+
+.models-tab:hover {
+    color: #2D5BFF;
+}
+
+.models-tab.active {
+    color: #2D5BFF;
+    border-bottom-color: #2D5BFF;
+}
+
+.filter-bar {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 20px;
+    align-items: center;
+}
+
+.filter-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.filter-group label {
+    margin-bottom: 5px;
+    color: #718096;
+    font-size: 12px;
+}
+
+.filter-select {
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    color: #334E68;
+}
+
+.search-filter {
+    margin-left: auto;
+}
+
+.search-filter input {
+    padding: 8px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+    width: 250px;
+}
+
+.section-card {
+    background-color: #FFFFFF;
+    border: 1px solid #E2E8F0;
+    border-radius: 8px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.section-card h2 {
+    color: #1A365D;
+    margin-bottom: 15px;
+    font-size: 16px;
+    text-transform: uppercase;
+    border-bottom: 1px solid #E2E8F0;
+    padding-bottom: 10px;
+}
+
+.activity-list {
+    display: flex;
+    flex-direction: column;
+}
+
+.activity-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-content a {
+    color: #2D5BFF;
+    text-decoration: none;
+}
+
+.activity-time {
+    color: #718096;
+    font-size: 12px;
+}
+
+.analytics-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.analytics-card h3 {
+    color: #334E68;
+    margin-bottom: 15px;
+}
+
+.chart-container {
+    height: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Modal Styles */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.4);
+    align-items: center;
+    justify-content: center;
+}
+
+.modal-content {
+    background-color: #FFFFFF;
+    border-radius: 8px;
+    width: 600px;
+    max-width: 90%;
+    box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+    position: relative;
+}
+
+.modal-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #E2E8F0;
+}
+
+.modal-header h2 {
+    margin: 0;
+    color: #1A365D;
+    font-size: 20px;
+}
+
+.modal-close {
+    background: none;
+    border: none;
+    font-size: 24px;
+    color: #718096;
+    cursor: pointer;
+}
+
+.modal-body {
+    padding: 20px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    padding: 20px;
+    border-top: 1px solid #E2E8F0;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #334E68;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #E2E8F0;
+    border-radius: 4px;
+}
+
+.radio-group {
+    display: flex;
+    gap: 15px;
+}
+
+.radio-option {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.template-select {
+    display: none;
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+    .models-grid {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        width: 95%;
+    }
+}

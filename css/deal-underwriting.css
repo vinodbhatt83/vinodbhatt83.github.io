@@ -1,0 +1,404 @@
+/* Deal Underwriting CSS - Specific styling for the deal underwriting page */
+
+.deal-header {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: var(--space-lg);
+}
+
+.deal-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-xs);
+}
+
+.deal-info {
+    color: var(--gray-600);
+    font-size: 14px;
+    margin-bottom: var(--space-md);
+}
+
+.scenario-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+}
+
+.scenario-selector {
+    display: flex;
+    align-items: center;
+    margin-right: var(--space-lg);
+}
+
+.scenario-selector label {
+    margin-right: var(--space-sm);
+    font-weight: 500;
+}
+
+.scenario-selector select {
+    min-width: 150px;
+    height: 36px;
+    padding: 0 var(--space-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%236C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9L12 15L18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right var(--space-md) center;
+    background-size: 12px;
+}
+
+.compare-selector {
+    display: flex;
+    align-items: center;
+    margin-right: var(--space-lg);
+}
+
+.compare-selector label {
+    margin-right: var(--space-sm);
+    font-weight: 500;
+}
+
+.compare-selector select {
+    min-width: 150px;
+    height: 36px;
+    padding: 0 var(--space-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%236C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9L12 15L18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right var(--space-md) center;
+    background-size: 12px;
+}
+
+.new-scenario-btn {
+    margin-left: auto;
+}
+
+.underwriting-grid {
+    display: grid;
+    grid-template-columns: 240px 1fr;
+    gap: var(--space-lg);
+}
+
+.underwriting-tabs {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+}
+
+.underwriting-tab {
+    padding: var(--space-md);
+    font-weight: 500;
+    color: var(--gray-700);
+    cursor: pointer;
+    transition: background-color var(--transition-fast);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.underwriting-tab:last-child {
+    border-bottom: none;
+}
+
+.underwriting-tab:hover {
+    background-color: var(--gray-100);
+}
+
+.underwriting-tab.active {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.key-metrics-card {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.key-metrics-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-md);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: var(--space-sm);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.metric-box {
+    text-align: center;
+    padding: var(--space-md);
+    border-radius: var(--radius-sm);
+    background-color: var(--gray-100);
+}
+
+.metric-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-xs);
+}
+
+.metric-label {
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+.view-all-metrics {
+    display: block;
+    text-align: center;
+    margin-top: var(--space-md);
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+/* Assumptions Section */
+.assumptions-section {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.assumptions-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.assumption-card {
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-sm);
+    padding: var(--space-md);
+}
+
+.assumption-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-xs);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.assumption-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: var(--space-sm);
+}
+
+.assumption-label {
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.assumption-value {
+    font-weight: 500;
+    color: var(--dark-navy);
+}
+
+.assumption-value.editable {
+    cursor: pointer;
+    border-bottom: 1px dashed var(--gray-400);
+}
+
+.ai-suggest-btn {
+    display: inline-flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    border: 1px solid var(--primary-blue);
+    border-radius: var(--radius-sm);
+    color: var(--primary-blue);
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: all var(--transition-fast);
+    margin-top: var(--space-sm);
+}
+
+.ai-suggest-btn:hover {
+    background-color: var(--primary-blue);
+    color: var(--white);
+}
+
+.ai-suggest-btn svg {
+    margin-right: var(--space-xs);
+}
+
+.ai-analysis {
+    background-color: rgba(45, 91, 255, 0.05);
+    border-left: 3px solid var(--primary-blue);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+    color: var(--gray-800);
+}
+
+/* Document Sources */
+.document-sources {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+}
+
+.document-sources h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-md);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: var(--space-sm);
+}
+
+.document-list {
+    list-style: none;
+}
+
+.document-item {
+    display: flex;
+    align-items: center;
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.document-item:last-child {
+    border-bottom: none;
+}
+
+.document-item:before {
+    content: "•";
+    color: var(--primary-blue);
+    margin-right: var(--space-sm);
+}
+
+.document-link {
+    margin-left: auto;
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.add-document {
+    display: flex;
+    align-items: center;
+    color: var(--primary-blue);
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: var(--space-md);
+}
+
+.add-document svg {
+    margin-right: var(--space-xs);
+}
+
+/* Forecast Tab */
+.forecast-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: var(--space-lg);
+}
+
+.forecast-table th {
+    text-align: left;
+    padding: var(--space-sm);
+    font-weight: 600;
+    color: var(--gray-700);
+    border-bottom: 1px solid var(--gray-300);
+    background-color: var(--gray-100);
+}
+
+.forecast-table td {
+    padding: var(--space-sm);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.forecast-table .row-header {
+    font-weight: 500;
+    color: var(--gray-700);
+}
+
+.forecast-table .section-header {
+    font-weight: 600;
+    color: var(--dark-navy);
+    background-color: var(--gray-100);
+}
+
+.forecast-table .total-row {
+    font-weight: 600;
+    border-top: 2px solid var(--gray-300);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .assumptions-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .underwriting-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .underwriting-tabs {
+        display: flex;
+        overflow-x: auto;
+        margin-bottom: var(--space-lg);
+    }
+
+    .underwriting-tab {
+        white-space: nowrap;
+        border-bottom: none;
+        border-right: 1px solid var(--gray-200);
+        padding: var(--space-sm) var(--space-md);
+    }
+
+    .underwriting-tab:last-child {
+        border-right: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .scenario-bar {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .scenario-selector,
+    .compare-selector {
+        width: 100%;
+        margin-right: 0;
+        margin-bottom: var(--space-md);
+    }
+
+    .new-scenario-btn {
+        margin-left: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .assumptions-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}

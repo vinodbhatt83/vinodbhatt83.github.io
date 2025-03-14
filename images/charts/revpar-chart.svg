@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400">
+  <!-- Background -->
+  <rect width="800" height="400" fill="#F8F9FA" rx="8" ry="8"/>
+  
+  <!-- Chart Grid -->
+  <g stroke="#DEE2E6" stroke-width="1">
+    <line x1="60" y1="350" x2="750" y2="350"/>
+    <line x1="60" y1="300" x2="750" y2="300"/>
+    <line x1="60" y1="250" x2="750" y2="250"/>
+    <line x1="60" y1="200" x2="750" y2="200"/>
+    <line x1="60" y1="150" x2="750" y2="150"/>
+    <line x1="60" y1="100" x2="750" y2="100"/>
+    <line x1="60" y1="50" x2="750" y2="50"/>
+  </g>
+  
+  <!-- Y-Axis -->
+  <g fill="#6C757D" font-family="Inter, sans-serif" font-size="12">
+    <text x="30" y="350" text-anchor="end">$0</text>
+    <text x="30" y="300" text-anchor="end">$50</text>
+    <text x="30" y="250" text-anchor="end">$100</text>
+    <text x="30" y="200" text-anchor="end">$150</text>
+    <text x="30" y="150" text-anchor="end">$200</text>
+    <text x="30" y="100" text-anchor="end">$250</text>
+    <text x="30" y="50" text-anchor="end">$300</text>
+  </g>
+  
+  <!-- X-Axis -->
+  <g fill="#6C757D" font-family="Inter, sans-serif" font-size="12">
+    <text x="117" y="370" text-anchor="middle">Jan</text>
+    <text x="174" y="370" text-anchor="middle">Feb</text>
+    <text x="231" y="370" text-anchor="middle">Mar</text>
+    <text x="288" y="370" text-anchor="middle">Apr</text>
+    <text x="345" y="370" text-anchor="middle">May</text>
+    <text x="402" y="370" text-anchor="middle">Jun</text>
+    <text x="459" y="370" text-anchor="middle">Jul</text>
+    <text x="516" y="370" text-anchor="middle">Aug</text>
+    <text x="573" y="370" text-anchor="middle">Sep</text>
+    <text x="630" y="370" text-anchor="middle">Oct</text>
+    <text x="687" y="370" text-anchor="middle">Nov</text>
+    <text x="744" y="370" text-anchor="middle">Dec</text>
+  </g>
+  
+  <!-- RevPAR Line -->
+  <path d="M60,240 L117,235 L174,225 L231,215 L288,200 L345,190 L402,180 L459,170 L516,160 L573,165 L630,170 L687,175 L744,168" stroke="#2D5BFF" stroke-width="3" fill="none"/>
+  <g fill="#2D5BFF">
+    <circle cx="60" cy="240" r="4"/>
+    <circle cx="117" cy="235" r="4"/>
+    <circle cx="174" cy="225" r="4"/>
+    <circle cx="231" cy="215" r="4"/>
+    <circle cx="288" cy="200" r="4"/>
+    <circle cx="345" cy="190" r="4"/>
+    <circle cx="402" cy="180" r="4"/>
+    <circle cx="459" cy="170" r="4"/>
+    <circle cx="516" cy="160" r="4"/>
+    <circle cx="573" cy="165" r="4"/>
+    <circle cx="630" cy="170" r="4"/>
+    <circle cx="687" cy="175" r="4"/>
+    <circle cx="744" cy="168" r="4"/>
+  </g>
+  
+  <!-- ADR Line -->
+  <path d="M60,180 L117,185 L174,175 L231,170 L288,160 L345,155 L402,145 L459,135 L516,130 L573,125 L630,120 L687,115 L744,110" stroke="#00C2B7" stroke-width="3" fill="none" stroke-dasharray="5,5"/>
+  <g fill="#00C2B7">
+    <circle cx="60" cy="180" r="4"/>
+    <circle cx="117" cy="185" r="4"/>
+    <circle cx="174" cy="175" r="4"/>
+    <circle cx="231" cy="170" r="4"/>
+    <circle cx="288" cy="160" r="4"/>
+    <circle cx="345" cy="155" r="4"/>
+    <circle cx="402" cy="145" r="4"/>
+    <circle cx="459" cy="135" r="4"/>
+    <circle cx="516" cy="130" r="4"/>
+    <circle cx="573" cy="125" r="4"/>
+    <circle cx="630" cy="120" r="4"/>
+    <circle cx="687" cy="115" r="4"/>
+    <circle cx="744" cy="110" r="4"/>
+  </g>
+  
+  <!-- Legend -->
+  <rect x="600" y="20" width="140" height="60" fill="white" stroke="#DEE2E6" rx="4" ry="4"/>
+  <line x1="620" y1="40" x2="650" y2="40" stroke="#2D5BFF" stroke-width="3"/>
+  <circle cx="635" cy="40" r="4" fill="#2D5BFF"/>
+  <text x="660" y="44" font-family="Inter, sans-serif" font-size="12" fill="#343A40">RevPAR</text>
+  <line x1="620" y1="60" x2="650" y2="60" stroke="#00C2B7" stroke-width="3" stroke-dasharray="5,5"/>
+  <circle cx="635" cy="60" r="4" fill="#00C2B7"/>
+  <text x="660" y="64" font-family="Inter, sans-serif" font-size="12" fill="#343A40">ADR</text>
+</svg>

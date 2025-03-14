@@ -1,0 +1,308 @@
+/* Portfolio CSS - Specific styling for the portfolio page */
+
+.filter-bar {
+    display: flex;
+    align-items: center;
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-md);
+    margin-bottom: var(--space-lg);
+    flex-wrap: wrap;
+    gap: var(--space-md);
+}
+
+.filter-group {
+    display: flex;
+    align-items: center;
+}
+
+.filter-group label {
+    font-size: 12px;
+    font-weight: 500;
+    color: var(--gray-700);
+    margin-right: var(--space-sm);
+    white-space: nowrap;
+}
+
+.filter-select {
+    min-width: 150px;
+    height: 36px;
+    padding: 0 var(--space-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+    appearance: none;
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="%236C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9L12 15L18 9"/></svg>');
+    background-repeat: no-repeat;
+    background-position: right var(--space-md) center;
+    background-size: 12px;
+}
+
+.search-filter {
+    flex: 1;
+    min-width: 200px;
+}
+
+.search-filter input {
+    width: 100%;
+    height: 36px;
+    padding: 0 var(--space-md);
+    border: 1px solid var(--gray-300);
+    border-radius: var(--radius-sm);
+    font-size: 14px;
+}
+
+/* Portfolio Grid */
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+/* Property Cards */
+.property-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    overflow: hidden;
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+}
+
+.property-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
+}
+
+.property-image {
+    height: 180px;
+    overflow: hidden;
+    background-color: var(--gray-100);
+}
+
+.property-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.property-info {
+    padding: var(--space-md);
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+
+.property-info h3 {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: var(--space-xs);
+    color: var(--dark-navy);
+}
+
+.property-location {
+    color: var(--gray-600);
+    margin-bottom: var(--space-sm);
+}
+
+.property-data {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-sm);
+    margin-bottom: var(--space-md);
+}
+
+.data-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.data-label {
+    font-size: 12px;
+    color: var(--gray-600);
+    margin-bottom: var(--space-xs);
+}
+
+.data-value {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-navy);
+}
+
+.performance-indicator {
+    display: flex;
+    align-items: center;
+    padding: var(--space-xs) var(--space-sm);
+    border-radius: var(--radius-sm);
+    font-size: 12px;
+    font-weight: 500;
+    margin-top: auto;
+}
+
+.performance-indicator svg {
+    margin-right: var(--space-xs);
+}
+
+.performance-indicator.positive {
+    background-color: rgba(0, 194, 183, 0.1);
+    color: var(--teal);
+}
+
+.performance-indicator.negative {
+    background-color: rgba(255, 90, 95, 0.1);
+    color: var(--coral);
+}
+
+/* Add Property Card */
+.add-property {
+    border: 2px dashed var(--gray-300);
+    background-color: var(--gray-50);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 300px;
+}
+
+.add-property-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: var(--space-lg);
+    text-align: center;
+}
+
+.add-property-content svg {
+    margin-bottom: var(--space-md);
+    color: var(--gray-500);
+}
+
+.add-property-content p {
+    color: var(--gray-600);
+    font-weight: 500;
+}
+
+.add-property:hover {
+    border-color: var(--primary-blue);
+    background-color: rgba(45, 91, 255, 0.05);
+}
+
+.add-property:hover svg {
+    color: var(--primary-blue);
+}
+
+.add-property:hover p {
+    color: var(--primary-blue);
+}
+
+/* Portfolio Summary Cards */
+.portfolio-summary-cards {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.summary-card {
+    background-color: var(--white);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+    border: 1px solid var(--gray-200);
+}
+
+.summary-card h2 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-md);
+    padding-bottom: var(--space-sm);
+    border-bottom: 1px solid var(--gray-200);
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.metric-box {
+    text-align: center;
+    padding: var(--space-md);
+    background-color: var(--gray-100);
+    border-radius: var(--radius-sm);
+}
+
+.metric-value {
+    font-size: 20px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-xs);
+}
+
+.metric-label {
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+/* Updates List */
+.update-list {
+    list-style: none;
+}
+
+.update-item {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.update-item:last-child {
+    border-bottom: none;
+}
+
+.update-content {
+    flex: 1;
+}
+
+.update-time {
+    font-size: 12px;
+    color: var(--gray-500);
+    white-space: nowrap;
+    margin-left: var(--space-md);
+}
+
+/* Responsive */
+@media (max-width: 992px) {
+    .portfolio-summary-cards {
+        grid-template-columns: 1fr;
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .filter-bar {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    .filter-group,
+    .search-filter {
+        width: 100%;
+        margin-bottom: var(--space-sm);
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+    }
+}

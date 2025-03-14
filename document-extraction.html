@@ -1,0 +1,471 @@
+<!-- document-extraction.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Document Extraction - INVEST PLATFORM</title>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/document-processing.css">
+    <link rel="stylesheet" href="css/document-extraction.css">
+</head>
+
+<body>
+    <div class="app-container">
+        <!-- Top Navigation -->
+        <header class="top-nav">
+            <div class="logo">
+                <span>INVEST PLATFORM</span>
+            </div>
+            <div class="top-nav-right">
+                <div class="search-bar">
+                    <input type="text" placeholder="Search...">
+                    <button class="search-icon">
+                        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M21 21L15 15M17 10C17 13.866 13.866 17 10 17C6.13401 17 3 13.866 3 10C3 6.13401 6.13401 3 10 3C13.866 3 17 6.13401 17 10Z"
+                                stroke="#6C757D" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                    </button>
+                </div>
+                <div class="user-menu">
+                    <img src="images/icons/user.svg" alt="User" class="user-avatar">
+                    <span>John Smith</span>
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M6 9L12 15L18 9" stroke="#6C757D" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" />
+                    </svg>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <div class="main-content">
+            <!-- Side Navigation -->
+            <nav class="side-nav">
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Dashboard
+                        </a>
+                    </li>
+                    <li>
+                        <a href="pipeline.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                            </svg>
+                            Pipeline
+                        </a>
+                    </li>
+                    <li>
+                        <a href="portfolio.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" />
+                                <path
+                                    d="M16 2V6M8 2V6M3 10H21M8 14H8.01M12 14H12.01M16 14H16.01M8 18H8.01M12 18H12.01M16 18H16.01"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Portfolio
+                        </a>
+                    </li>
+                    <li>
+                        <a href="analytics.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Analytics
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="document-processing.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 12H15M9 16H15M9 8H15M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Documents
+                        </a>
+                    </li>
+                    <li>
+                        <a href="models.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M4 7V4H20V7M4 11V17C4 19.2091 5.79086 21 8 21H16C18.2091 21 20 19.2091 20 17V11M12 8V16M8 12H16"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Models
+                        </a>
+                    </li>
+                    <li>
+                        <a href="task-management.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M9 11L12 14L22 4M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Tasks
+                        </a>
+                    </li>
+                    <li>
+                        <a href="settings.html">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path
+                                    d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                                <path
+                                    d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                    stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            </svg>
+                            Settings
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Document Processing Content -->
+            <div class="content-area">
+                <div class="document-header">
+                    <div class="document-title">
+                        <h1>AI DOCUMENT EXTRACTION</h1>
+                        <p>STR Report - Courtyard by Marriott, Nashville</p>
+                    </div>
+                    <div class="page-actions">
+                        <button class="btn btn-secondary">Back to Documents</button>
+                        <button class="btn btn-primary">Save & Process</button>
+                    </div>
+                </div>
+
+                <div class="extraction-status-bar">
+                    <div class="status-progress">
+                        <div class="status-step completed">
+                            <div class="step-number">1</div>
+                            <div class="step-label">Upload</div>
+                        </div>
+                        <div class="status-connector completed"></div>
+                        <div class="status-step completed">
+                            <div class="step-number">2</div>
+                            <div class="step-label">Processing</div>
+                        </div>
+                        <div class="status-connector completed"></div>
+                        <div class="status-step active">
+                            <div class="step-number">3</div>
+                            <div class="step-label">Validation</div>
+                        </div>
+                        <div class="status-connector"></div>
+                        <div class="status-step">
+                            <div class="step-number">4</div>
+                            <div class="step-label">Mapping</div>
+                        </div>
+                        <div class="status-connector"></div>
+                        <div class="status-step">
+                            <div class="step-number">5</div>
+                            <div class="step-label">Complete</div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="document-ai-extraction">
+                    <div class="extraction-container">
+                        <div class="document-preview">
+                            <div class="preview-header">
+                                <h2>DOCUMENT PREVIEW</h2>
+                                <div class="preview-controls">
+                                    <button class="btn-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21 21L16.65 16.65M11 8V14M8 11H14M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="btn-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M21 21L16.65 16.65M11 8V14M8 11H14M19 11C19 15.4183 15.4183 19 11 19C6.58172 19 3 15.4183 3 11C3 6.58172 6.58172 3 11 3C15.4183 3 19 6.58172 19 11Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                    <button class="btn-icon">
+                                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <path
+                                                d="M8 7H16M8 12H16M8 17H16M4 21H20C20.5523 21 21 20.5523 21 20V4C21 3.44772 20.5523 3 20 3H4C3.44772 3 3 3.44772 3 4V20C3 20.5523 3.44772 21 4 21Z"
+                                                stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                                stroke-linejoin="round" />
+                                        </svg>
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="document-image">
+                                <!-- Document preview would be rendered here -->
+                                <img src="images/sample-str-report.svg" alt="STR Report Preview">
+                            </div>
+                            <div class="page-controls">
+                                <button class="btn btn-sm">Previous Page</button>
+                                <span>Page 1 of 4</span>
+                                <button class="btn btn-sm">Next Page</button>
+                            </div>
+                        </div>
+
+                        <div class="extraction-results">
+                            <div class="results-header">
+                                <h2>EXTRACTED DATA</h2>
+                                <div class="confidence-summary">
+                                    <div class="confidence-indicator high">
+                                        Overall Confidence: 92% <span>[High]</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="data-validation-tabs">
+                                <div class="validation-tab active">Property Info</div>
+                                <div class="validation-tab">Performance Metrics</div>
+                                <div class="validation-tab">Market Data</div>
+                                <div class="validation-tab">Competitive Set</div>
+                            </div>
+
+                            <div class="extracted-data-table">
+                                <table class="validation-table">
+                                    <thead>
+                                        <tr>
+                                            <th width="30%">Field</th>
+                                            <th width="40%">Extracted Value</th>
+                                            <th width="15%">Confidence</th>
+                                            <th width="15%">Actions</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Property Name</td>
+                                            <td class="editable-cell">Courtyard by Marriott Nashville</td>
+                                            <td>
+                                                <div class="confidence-indicator high">98%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Address</td>
+                                            <td class="editable-cell">1901 West End Ave, Nashville, TN 37203</td>
+                                            <td>
+                                                <div class="confidence-indicator high">97%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Number of Rooms</td>
+                                            <td class="editable-cell">138</td>
+                                            <td>
+                                                <div class="confidence-indicator high">99%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Report Date</td>
+                                            <td class="editable-cell">February 2025</td>
+                                            <td>
+                                                <div class="confidence-indicator high">96%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chain Scale</td>
+                                            <td class="editable-cell">Upscale</td>
+                                            <td>
+                                                <div class="confidence-indicator medium">85%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Property Type</td>
+                                            <td class="editable-cell">Full Service</td>
+                                            <td>
+                                                <div class="confidence-indicator medium">82%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Market</td>
+                                            <td class="editable-cell">Nashville, TN</td>
+                                            <td>
+                                                <div class="confidence-indicator high">94%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Submarket</td>
+                                            <td class="editable-cell">Downtown Nashville</td>
+                                            <td>
+                                                <div class="confidence-indicator low">65%</div>
+                                            </td>
+                                            <td>
+                                                <button class="btn-icon">
+                                                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M15.2322 5.23223L18.7677 8.76777M16.7322 3.73223C17.7085 2.75592 19.2914 2.75592 20.2677 3.73223C21.244 4.70854 21.244 6.29146 20.2677 7.26777L6.5 21.0355H3V17.4644L16.7322 3.73223Z"
+                                                            stroke="currentColor" stroke-width="2"
+                                                            stroke-linecap="round" stroke-linejoin="round" />
+                                                    </svg>
+                                                </button>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <div class="ai-insight">
+                                <strong>AI Insight:</strong> This STR report shows property metrics are above the
+                                competitive set in all categories. Consider adjusting the property type classification
+                                from "Full Service" to "Select Service" based on the amenities described on page 3.
+                            </div>
+
+                            <div class="validation-actions">
+                                <button class="btn btn-secondary">Reject Selected</button>
+                                <button class="btn btn-secondary">Edit Selected</button>
+                                <button class="btn btn-primary">Approve All</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="data-mapping-section">
+                        <h2>DATA MAPPING</h2>
+                        <p>Choose where to map the extracted data once validated.</p>
+
+                        <div class="mapping-options">
+                            <div class="mapping-option">
+                                <input type="radio" id="map-property" name="mapping-destination" checked>
+                                <label for="map-property">
+                                    <strong>Property Profile</strong>
+                                    <span>Update Courtyard by Marriott property profile</span>
+                                </label>
+                            </div>
+                            <div class="mapping-option">
+                                <input type="radio" id="map-deal" name="mapping-destination">
+                                <label for="map-deal">
+                                    <strong>Deal Underwriting</strong>
+                                    <span>Update current underwriting for this property</span>
+                                </label>
+                            </div>
+                            <div class="mapping-option">
+                                <input type="radio" id="map-analytics" name="mapping-destination">
+                                <label for="map-analytics">
+                                    <strong>Market Analytics</strong>
+                                    <span>Update market performance data</span>
+                                </label>
+                            </div>
+                            <div class="mapping-option">
+                                <input type="radio" id="map-export" name="mapping-destination">
+                                <label for="map-export">
+                                    <strong>Export to Excel</strong>
+                                    <span>Export extracted data to Excel template</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/main.js"></script>
+    <script src="js/document-processing.js"></script>
+    <script src="js/document-extraction.js"></script>
+</body>
+
+</html>

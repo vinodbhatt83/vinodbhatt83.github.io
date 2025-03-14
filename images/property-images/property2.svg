@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Sky -->
+  <rect width="400" height="300" fill="#B0E0E6"/>
+  
+  <!-- Ground -->
+  <rect width="400" height="50" y="250" fill="#8FBC8F"/>
+  
+  <!-- Building Base -->
+  <rect x="80" y="90" width="240" height="160" fill="#F9F9F9" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <!-- Main Entrance -->
+  <rect x="160" y="160" width="80" height="90" fill="#F5F5F5" stroke="#CCCCCC" stroke-width="1"/>
+  <rect x="185" y="200" width="30" height="50" fill="#4A6580"/>
+  
+  <!-- Windows -->
+  <g fill="#ADD8E6" stroke="#6A9BCF" stroke-width="1">
+    <!-- Left wing -->
+    <rect x="95" y="110" width="20" height="30"/>
+    <rect x="125" y="110" width="20" height="30"/>
+    <rect x="95" y="150" width="20" height="30"/>
+    <rect x="125" y="150" width="20" height="30"/>
+    <rect x="95" y="190" width="20" height="30"/>
+    <rect x="125" y="190" width="20" height="30"/>
+    
+    <!-- Right wing -->
+    <rect x="255" y="110" width="20" height="30"/>
+    <rect x="285" y="110" width="20" height="30"/>
+    <rect x="255" y="150" width="20" height="30"/>
+    <rect x="285" y="150" width="20" height="30"/>
+    <rect x="255" y="190" width="20" height="30"/>
+    <rect x="285" y="190" width="20" height="30"/>
+    
+    <!-- Above entrance -->
+    <rect x="160" y="110" width="20" height="30"/>
+    <rect x="190" y="110" width="20" height="30"/>
+    <rect x="220" y="110" width="20" height="30"/>
+  </g>
+  
+  <!-- Canopy -->
+  <rect x="170" y="190" width="60" height="5" fill="#A0A0A0"/>
+  <path d="M170,190 L160,200 L240,200 L230,190 Z" fill="#D0D0D0" stroke="#A0A0A0" stroke-width="1"/>
+  
+  <!-- Hotel Sign -->
+  <rect x="135" y="70" width="130" height="20" fill="#FFB800"/>
+  <text x="200" y="85" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="#333">HAMPTON INN</text>
+  
+  <!-- Landscaping -->
+  <circle cx="140" cy="255" r="12" fill="#228B22"/>
+  <circle cx="140" cy="243" r="10" fill="#228B22"/>
+  <circle cx="140" cy="232" r="8" fill="#228B22"/>
+  
+  <circle cx="260" cy="255" r="12" fill="#228B22"/>
+  <circle cx="260" cy="243" r="10" fill="#228B22"/>
+  <circle cx="260" cy="232" r="8" fill="#228B22"/>
+  
+  <!-- Small bushes -->
+  <circle cx="110" cy="245" r="5" fill="#228B22"/>
+  <circle cx="130" cy="245" r="5" fill="#228B22"/>
+  <circle cx="150" cy="245" r="5" fill="#228B22"/>
+  
+  <circle cx="250" cy="245" r="5" fill="#228B22"/>
+  <circle cx="270" cy="245" r="5" fill="#228B22"/>
+  <circle cx="290" cy="245" r="5" fill="#228B22"/>
+  
+  <!-- Sun -->
+  <circle cx="350" cy="50" r="20" fill="#FFD700"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="100" cy="60" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="70" cy="55" rx="20" ry="10" fill="white" opacity="0.8"/>
+  <ellipse cx="130" cy="55" rx="25" ry="12" fill="white" opacity="0.8"/>
+</svg>

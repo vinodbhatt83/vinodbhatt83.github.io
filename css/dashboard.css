@@ -1,0 +1,243 @@
+/* Dashboard CSS - Specific styling for the dashboard page */
+
+.dashboard-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--space-lg);
+    margin-bottom: var(--space-lg);
+}
+
+.dashboard-card {
+    background-color: var(--white);
+    border: 1px solid var(--gray-200);
+    border-radius: var(--radius-md);
+    padding: var(--space-lg);
+    box-shadow: var(--shadow-sm);
+}
+
+.dashboard-card h2 {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-md);
+    border-bottom: 1px solid var(--gray-200);
+    padding-bottom: var(--space-sm);
+}
+
+.dashboard-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-sm);
+}
+
+/* Active Deals */
+.deal-cards {
+    display: flex;
+    flex-direction: column;
+}
+
+.deal-card {
+    padding: var(--space-md);
+    border-bottom: 1px solid var(--gray-200);
+    transition: background-color var(--transition-fast);
+}
+
+.deal-card:last-child {
+    border-bottom: none;
+}
+
+.deal-card:hover {
+    background-color: var(--gray-100);
+}
+
+.deal-card h3 {
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 var(--space-xs) 0;
+}
+
+.deal-card p {
+    color: var(--gray-600);
+    margin-bottom: var(--space-xs);
+}
+
+.deal-metrics {
+    display: flex;
+    align-items: center;
+    margin-bottom: var(--space-xs);
+    font-size: 14px;
+}
+
+.deal-metrics span {
+    margin-right: var(--space-sm);
+}
+
+.deal-stage {
+    font-size: 12px;
+    color: var(--primary-blue);
+    font-weight: 500;
+}
+
+.view-all {
+    display: block;
+    text-align: center;
+    padding: var(--space-sm);
+    font-weight: 500;
+    margin-top: var(--space-sm);
+}
+
+/* Portfolio Performance */
+.chart-container {
+    width: 100%;
+    height: 200px;
+    margin-bottom: var(--space-md);
+    background-color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.performance-chart {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.metrics-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-md);
+}
+
+.metric-card {
+    text-align: center;
+    padding: var(--space-sm);
+}
+
+.metric-value {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--dark-navy);
+    margin-bottom: var(--space-xs);
+}
+
+.metric-label {
+    font-size: 12px;
+    color: var(--gray-600);
+}
+
+/* Recent Activity */
+.activity-list {
+    list-style: none;
+}
+
+.activity-item {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.activity-item:last-child {
+    border-bottom: none;
+}
+
+.activity-content {
+    flex: 1;
+}
+
+.activity-time {
+    font-size: 12px;
+    color: var(--gray-500);
+    white-space: nowrap;
+    margin-left: var(--space-md);
+}
+
+/* Market Insights */
+.market-map {
+    width: 100%;
+    height: 200px;
+    margin-bottom: var(--space-md);
+    background-color: var(--gray-100);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.market-map img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.ranking-list {
+    list-style-position: inside;
+    margin-bottom: var(--space-md);
+}
+
+.ranking-list li {
+    padding: var(--space-xs) 0;
+}
+
+.view-report {
+    display: block;
+    text-align: right;
+    font-weight: 500;
+}
+
+/* Tasks & Reminders */
+.task-list {
+    list-style: none;
+}
+
+.task-item {
+    padding: var(--space-sm) 0;
+    border-bottom: 1px solid var(--gray-200);
+    display: flex;
+    align-items: flex-start;
+}
+
+.task-item:last-child {
+    border-bottom: none;
+}
+
+.task-item input[type="checkbox"] {
+    margin-right: var(--space-sm);
+    margin-top: 3px;
+}
+
+.task-item label {
+    flex: 1;
+    cursor: pointer;
+}
+
+.task-due {
+    font-size: 12px;
+    color: var(--gold);
+    white-space: nowrap;
+    margin-left: var(--space-md);
+}
+
+/* Responsive */
+@media (max-width: 1200px) {
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 992px) {
+    .dashboard-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    .dashboard-card {
+        padding: var(--space-md);
+    }
+
+    .metrics-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: var(--space-sm);
+    }
+}

@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+  <!-- Sky -->
+  <rect width="400" height="300" fill="#87CEEB"/>
+  
+  <!-- Ground -->
+  <rect width="400" height="50" y="250" fill="#8FBC8F"/>
+  
+  <!-- Building Base -->
+  <rect x="100" y="100" width="200" height="150" fill="#E8E8E8" stroke="#CCCCCC" stroke-width="1"/>
+  
+  <!-- Windows -->
+  <g fill="#A0C8F0" stroke="#6A9BCF" stroke-width="1">
+    <!-- Left section -->
+    <rect x="115" y="120" width="25" height="40"/>
+    <rect x="115" y="170" width="25" height="40"/>
+    <rect x="150" y="120" width="25" height="40"/>
+    <rect x="150" y="170" width="25" height="40"/>
+    
+    <!-- Middle section -->
+    <rect x="185" y="120" width="30" height="90"/>
+    
+    <!-- Right section -->
+    <rect x="225" y="120" width="25" height="40"/>
+    <rect x="225" y="170" width="25" height="40"/>
+    <rect x="260" y="120" width="25" height="40"/>
+    <rect x="260" y="170" width="25" height="40"/>
+  </g>
+  
+  <!-- Entrance -->
+  <rect x="185" y="220" width="30" height="30" fill="#4A6580"/>
+  
+  <!-- Hotel Sign -->
+  <rect x="140" y="80" width="120" height="20" fill="#2D5BFF"/>
+  <text x="200" y="95" text-anchor="middle" font-family="Arial, sans-serif" font-size="14" font-weight="bold" fill="white">COURTYARD</text>
+  
+  <!-- Roof Details -->
+  <rect x="90" y="100" width="220" height="5" fill="#A0A0A0"/>
+  
+  <!-- Landscaping -->
+  <circle cx="130" cy="255" r="10" fill="#228B22"/>
+  <circle cx="130" cy="245" r="8" fill="#228B22"/>
+  <circle cx="130" cy="235" r="6" fill="#228B22"/>
+  
+  <circle cx="270" cy="255" r="10" fill="#228B22"/>
+  <circle cx="270" cy="245" r="8" fill="#228B22"/>
+  <circle cx="270" cy="235" r="6" fill="#228B22"/>
+  
+  <!-- Sun -->
+  <circle cx="50" cy="50" r="20" fill="#FFD700"/>
+  
+  <!-- Clouds -->
+  <ellipse cx="320" cy="60" rx="40" ry="20" fill="white" opacity="0.8"/>
+  <ellipse cx="350" cy="50" rx="30" ry="15" fill="white" opacity="0.8"/>
+  <ellipse cx="290" cy="50" rx="25" ry="12" fill="white" opacity="0.8"/>
+</svg>
