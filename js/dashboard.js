@@ -43,13 +43,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Add click handlers for view all links
     const viewAllLinks = document.querySelectorAll('.view-all, .view-report, .view-all-tasks');
-    viewAllLinks.forEach(link => {
-        link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const feature = this.textContent.trim();
-            showNotification(`The "${feature}" feature will be available in the next release.`, 'info');
-        });
-    });
+    // viewAllLinks.forEach(link => {
+    //     link.addEventListener('click', function (e) {
+    //         e.preventDefault();
+    //         const feature = this.textContent.trim();
+    //         showNotification(`The "${feature}" feature will be available in the next release.`, 'info');
+    //     });
+    // });
 });
 
 // Initialize task checkboxes
