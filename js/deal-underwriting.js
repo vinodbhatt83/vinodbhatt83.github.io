@@ -29,7 +29,7 @@ function initScenarioSelectors() {
     if (scenarioSelect) {
         scenarioSelect.addEventListener('change', function () {
             const selectedScenario = this.value;
-            showNotification(`Loaded scenario: ${selectedScenario}`, 'info');
+            //showNotification(`Loaded scenario: ${selectedScenario}`, 'info');
 
             // In a real application, this would load the selected scenario data
             // For the prototype, we'll just show a notification
@@ -41,7 +41,7 @@ function initScenarioSelectors() {
             const compareScenario = this.value;
 
             if (compareScenario !== 'none') {
-                showNotification(`Comparing with scenario: ${compareScenario}`, 'info');
+                //showNotification(`Comparing with scenario: ${compareScenario}`, 'info');
 
                 // Add a 'comparison' class to various metrics to show side-by-side data
                 document.querySelectorAll('.metric-box').forEach(box => {
@@ -59,7 +59,7 @@ function initScenarioSelectors() {
     if (newScenarioBtn) {
         newScenarioBtn.addEventListener('click', function () {
             // In a real application, this would open a modal to create a new scenario
-            showNotification('New scenario creation will be available in the next release.', 'info');
+            //showNotification('New scenario creation will be available in the next release.', 'info');
         });
     }
 }
@@ -78,7 +78,7 @@ function initUnderwritingTabs() {
 
             // In a real application, this would show the corresponding tab content
             const tabName = this.textContent.trim();
-            showNotification(`${tabName} tab selected. Content for this tab will be available in the next release.`, 'info');
+            //showNotification(`${tabName} tab selected. Content for this tab will be available in the next release.`, 'info');
         });
     });
 }
@@ -115,7 +115,7 @@ function initEditableFields() {
 
                 // In a real application, this would update the model
                 if (newValue !== currentValue) {
-                    showNotification(`Updated ${fieldName} to ${newValue}`, 'success');
+                    //showNotification(`Updated ${fieldName} to ${newValue}`, 'success');
                 }
             });
 
@@ -138,11 +138,11 @@ function initAiSuggestions() {
             const cardTitle = this.closest('.assumption-card').querySelector('h3').textContent.trim();
 
             // Simulate AI thinking
-            showNotification(`AI is analyzing data to suggest values for ${cardTitle}...`, 'info');
+            //showNotification(`AI is analyzing data to suggest values for ${cardTitle}...`, 'info');
 
             // Simulate a delay for AI processing
             setTimeout(() => {
-                showNotification(`AI suggestions for ${cardTitle} applied!`, 'success');
+                //showNotification(`AI suggestions for ${cardTitle} applied!`, 'success');
 
                 // In a real application, this would update the values with AI suggestions
                 const card = this.closest('.assumption-card');
@@ -167,7 +167,7 @@ function initActionButtons() {
 
     if (actionsBtn) {
         actionsBtn.addEventListener('click', function () {
-            showNotification('Actions menu will be available in the next release.', 'info');
+            //showNotification('Actions menu will be available in the next release.', 'info');
         });
     }
 
@@ -176,7 +176,7 @@ function initActionButtons() {
     if (viewAllMetricsBtn) {
         viewAllMetricsBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            showNotification('Full metrics view will be available in the next release.', 'info');
+            //showNotification('Full metrics view will be available in the next release.', 'info');
         });
     }
 }
@@ -189,7 +189,7 @@ function initDocumentSources() {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const documentName = this.previousElementSibling.textContent.trim();
-            showNotification(`Opening document: ${documentName}`, 'info');
+            //showNotification(`Opening document: ${documentName}`, 'info');
         });
     });
 
@@ -198,7 +198,7 @@ function initDocumentSources() {
     if (addDocumentBtn) {
         addDocumentBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            showNotification('Document upload feature will be available in the next release.', 'info');
+            //showNotification('Document upload feature will be available in the next release.', 'info');
         });
     }
 }

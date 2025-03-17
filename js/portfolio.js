@@ -24,7 +24,7 @@ function initPropertyCards() {
                 window.location.href = 'property-analysis.html';
             } else {
                 // Show notification for other properties
-                showNotification(`Opening property: ${propertyName}`, 'info');
+                //showNotification(`Opening property: ${propertyName}`, 'info');
             }
         });
     });
@@ -40,7 +40,7 @@ function initFilters() {
             const filterValue = this.value;
 
             // In a real application, this would filter the properties
-            showNotification(`Filtering properties by ${filterType}: ${filterValue}`, 'info');
+            //showNotification(`Filtering properties by ${filterType}: ${filterValue}`, 'info');
         });
     });
 
@@ -52,7 +52,7 @@ function initFilters() {
             const searchTerm = searchInput.value.trim();
 
             if (searchTerm.length > 0) {
-                showNotification(`Searching for: "${searchTerm}"`, 'info');
+                //showNotification(`Searching for: "${searchTerm}"`, 'info');
 
                 // In a real application, this would search the properties
             }
@@ -67,14 +67,14 @@ function initAddPropertyButton() {
     const addPropertyBtn = document.querySelector('.page-actions .btn-primary');
     if (addPropertyBtn) {
         addPropertyBtn.addEventListener('click', function () {
-            showNotification('Add property feature will be available in the next release.', 'info');
+            //showNotification('Add property feature will be available in the next release.', 'info');
         });
     }
 
     const addPropertyCard = document.querySelector('.add-property');
     if (addPropertyCard) {
         addPropertyCard.addEventListener('click', function () {
-            showNotification('Add property feature will be available in the next release.', 'info');
+            //showNotification('Add property feature will be available in the next release.', 'info');
         });
     }
 }
@@ -82,7 +82,7 @@ function initAddPropertyButton() {
 // Show property performance details
 function showPropertyDetails(propertyName) {
     // In a real application, this would fetch and display property details
-    showNotification(`Loading details for ${propertyName}...`, 'info');
+    //showNotification(`Loading details for ${propertyName}...`, 'info');
 
     // Simulated loading delay
     setTimeout(() => {

@@ -13,7 +13,7 @@ document.addEventListener('DOMContentLoaded', function () {
             console.log('Selected category:', category);
 
             // For demo purposes, let's just show a notification
-            showNotification(`Showing ${category} integrations`);
+            //showNotification(`Showing ${category} integrations`);
         });
     });
 
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         configureBtn.style.display = 'none';
                     }
 
-                    showNotification(`${integrationName} disconnected successfully`);
+                    //showNotification(`${integrationName} disconnected successfully`);
                 }
             });
         });
@@ -141,7 +141,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 configModal.style.display = 'none';
             }
 
-            showNotification('Integration configuration saved successfully');
+            //showNotification('Integration configuration saved successfully');
         });
     }
 
@@ -159,11 +159,11 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
             // Simulate a connection process
-            showNotification('Connecting to service...');
+            //showNotification('Connecting to service...');
 
             // Simulate a successful connection after a delay
             setTimeout(() => {
-                showNotification('Connection successful');
+                //showNotification('Connection successful');
 
                 // Refresh the page to show the updated integration status
                 // window.location.reload();
@@ -179,7 +179,7 @@ document.addEventListener('DOMContentLoaded', function () {
         viewAllActivityBtn.addEventListener('click', function () {
             // Here you would typically navigate to a full activity log page
             console.log('View all activity clicked');
-            showNotification('Full activity log coming soon');
+            //showNotification('Full activity log coming soon');
         });
     }
 
@@ -189,7 +189,7 @@ document.addEventListener('DOMContentLoaded', function () {
         apiDocsBtn.addEventListener('click', function () {
             // Here you would typically navigate to the API documentation page
             console.log('API documentation clicked');
-            showNotification('API documentation opening in new tab');
+            //showNotification('API documentation opening in new tab');
             window.open('/api-docs', '_blank');
         });
     }
@@ -200,7 +200,7 @@ document.addEventListener('DOMContentLoaded', function () {
         webhooksBtn.addEventListener('click', function () {
             // Here you would typically navigate to the webhooks configuration page
             console.log('Configure webhooks clicked');
-            showNotification('Webhook configuration page coming soon');
+            //showNotification('Webhook configuration page coming soon');
         });
     }
 

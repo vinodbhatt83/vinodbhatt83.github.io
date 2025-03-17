@@ -29,7 +29,7 @@ function initPropertyTabs() {
 
             // In a real application, this would show the corresponding tab content
             const tabName = this.textContent.trim();
-            showNotification(`${tabName} tab selected. Content for this tab will be available in the next release.`, 'info');
+            //showNotification(`${tabName} tab selected. Content for this tab will be available in the next release.`, 'info');
         });
     });
 }
@@ -56,11 +56,11 @@ function initChartControls() {
     if (exportBtn) {
         exportBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            showNotification('Exporting chart data...', 'info');
+            //showNotification('Exporting chart data...', 'info');
 
             // Simulate export delay
             setTimeout(() => {
-                showNotification('Chart data exported successfully!', 'success');
+                //showNotification('Chart data exported successfully!', 'success');
             }, 1500);
         });
     }
@@ -70,7 +70,7 @@ function initChartControls() {
 function updateChart() {
     // This would normally update the chart with new data
     // For the prototype, we'll just show a notification
-    showNotification('Chart updated with new parameters', 'info');
+    //showNotification('Chart updated with new parameters', 'info');
 }
 
 // Initialize competitive set table
@@ -80,7 +80,7 @@ function initCompTable() {
     if (editCompSetBtn) {
         editCompSetBtn.addEventListener('click', function (e) {
             e.preventDefault();
-            showNotification('Edit competitive set feature will be available in the next release.', 'info');
+            //showNotification('Edit competitive set feature will be available in the next release.', 'info');
         });
     }
 
@@ -113,7 +113,7 @@ function sortTable(header) {
     header.setAttribute('data-order', isAscending ? 'asc' : 'desc');
 
     // In a real application, this would sort the table rows
-    showNotification(`Table sorted by ${header.textContent.trim()} (${isAscending ? 'Ascending' : 'Descending'})`, 'info');
+    //showNotification(`Table sorted by ${header.textContent.trim()} (${isAscending ? 'Ascending' : 'Descending'})`, 'info');
 }
 
 // Initialize action buttons
@@ -122,7 +122,7 @@ function initActionButtons() {
 
     if (actionsBtn) {
         actionsBtn.addEventListener('click', function () {
-            showNotification('Actions menu will be available in the next release.', 'info');
+            //showNotification('Actions menu will be available in the next release.', 'info');
         });
     }
 
@@ -132,7 +132,7 @@ function initActionButtons() {
         link.addEventListener('click', function (e) {
             e.preventDefault();
             const featureName = this.textContent.trim();
-            showNotification(`${featureName} feature will be available in the next release.`, 'info');
+            //showNotification(`${featureName} feature will be available in the next release.`, 'info');
         });
     });
 
@@ -141,7 +141,7 @@ function initActionButtons() {
     if (mapLink) {
         mapLink.addEventListener('click', function (e) {
             e.preventDefault();
-            showNotification('Map view will be available in the next release.', 'info');
+            //showNotification('Map view will be available in the next release.', 'info');
         });
     }
 }

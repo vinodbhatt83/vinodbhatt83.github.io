@@ -28,7 +28,7 @@ function initDocumentFilters() {
 
             // In a real application, this would filter the documents
             // For the prototype, we'll just show a notification
-            showNotification(`Filtering documents by ${filterType}: ${filterValue}`, 'info');
+            ////showNotification(`Filtering documents by ${filterType}: ${filterValue}`, 'info');
         });
     });
 
@@ -40,7 +40,7 @@ function initDocumentFilters() {
             const searchTerm = searchInput.value.trim();
 
             if (searchTerm.length > 0) {
-                showNotification(`Searching for: "${searchTerm}"`, 'info');
+                //showNotification(`Searching for: "${searchTerm}"`, 'info');
 
                 // In a real application, this would search the documents
                 // For the prototype, we'll just show a notification
@@ -63,7 +63,7 @@ function initDocumentCards() {
             const documentCard = this.closest('.document-card');
             const documentName = documentCard.querySelector('.document-name').textContent.trim();
 
-            showNotification(`Opening document: ${documentName}`, 'info');
+            //showNotification(`Opening document: ${documentName}`, 'info');
         });
     });
 
@@ -73,11 +73,11 @@ function initDocumentCards() {
             const documentCard = this.closest('.document-card');
             const documentName = documentCard.querySelector('.document-name').textContent.trim();
 
-            showNotification(`Processing document: ${documentName}`, 'info');
+            //showNotification(`Processing document: ${documentName}`, 'info');
 
             // Simulate processing delay
             setTimeout(() => {
-                showNotification(`Document processing started: ${documentName}`, 'success');
+                //showNotification(`Document processing started: ${documentName}`, 'success');
 
                 // Show the processing status section
                 const processingStatus = document.querySelector('.processing-card');
@@ -99,7 +99,7 @@ function initDocumentCards() {
 
     if (addDocumentCard) {
         addDocumentCard.addEventListener('click', function () {
-            showNotification('Document upload feature will be available in the next release.', 'info');
+            //showNotification('Document upload feature will be available in the next release.', 'info');
         });
     }
 }
@@ -114,7 +114,7 @@ function initProcessingStatus() {
             e.preventDefault();
 
             // In a real application, this would navigate to the extracted data view
-            showNotification('Extracted data view will be available in the next release.', 'info');
+            //showNotification('Extracted data view will be available in the next release.', 'info');
         });
     }
 
@@ -123,7 +123,7 @@ function initProcessingStatus() {
             e.preventDefault();
 
             confirmDialog('Are you sure you want to cancel processing?', function () {
-                showNotification('Processing cancelled.', 'info');
+                //showNotification('Processing cancelled.', 'info');
 
                 // Hide the processing card
                 const processingCard = document.querySelector('.processing-card');
@@ -143,19 +143,19 @@ function initDataValidation() {
 
     if (approveBtn) {
         approveBtn.addEventListener('click', function () {
-            showNotification('All extracted data approved!', 'success');
+            //showNotification('All extracted data approved!', 'success');
         });
     }
 
     if (editBtn) {
         editBtn.addEventListener('click', function () {
-            showNotification('Edit mode will be available in the next release.', 'info');
+            //showNotification('Edit mode will be available in the next release.', 'info');
         });
     }
 
     if (rejectBtn) {
         rejectBtn.addEventListener('click', function () {
-            showNotification('Rejection workflow will be available in the next release.', 'info');
+            //showNotification('Rejection workflow will be available in the next release.', 'info');
         });
     }
 
@@ -190,7 +190,7 @@ function initDataValidation() {
 
                 // In a real application, this would update the extracted data
                 if (newValue !== currentValue) {
-                    showNotification(`Updated ${fieldName} to ${newValue}`, 'success');
+                    //showNotification(`Updated ${fieldName} to ${newValue}`, 'success');
                 }
             });
 
@@ -210,7 +210,7 @@ function initUploadButton() {
 
     if (uploadBtn) {
         uploadBtn.addEventListener('click', function () {
-            showNotification('Document upload feature will be available in the next release.', 'info');
+            //showNotification('Document upload feature will be available in the next release.', 'info');
         });
     }
 }
@@ -241,7 +241,7 @@ function startProgressAnimation() {
 
         if (progress >= 100) {
             clearInterval(interval);
-            showNotification('Document processing complete!', 'success');
+            //showNotification('Document processing complete!', 'success');
 
             // Show validation section
             const validationCard = document.querySelector('.validation-card');

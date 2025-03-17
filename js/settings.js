@@ -10,7 +10,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 // Here you would typically send the form data to the server
                 console.log('Saving profile changes');
-                showNotification('Profile updated successfully');
+                //showNotification('Profile updated successfully');
             });
         }
     }
@@ -28,12 +28,12 @@ document.addEventListener('DOMContentLoaded', function () {
                 const confirmPassword = document.getElementById('confirm-password').value;
 
                 if (!currentPassword || !newPassword || !confirmPassword) {
-                    showNotification('Please fill in all password fields', 'error');
+                    //showNotification('Please fill in all password fields', 'error');
                     return;
                 }
 
                 if (newPassword !== confirmPassword) {
-                    showNotification('New passwords do not match', 'error');
+                    //showNotification('New passwords do not match', 'error');
                     return;
                 }
 
@@ -45,7 +45,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 document.getElementById('new-password').value = '';
                 document.getElementById('confirm-password').value = '';
 
-                showNotification('Password updated successfully');
+                //showNotification('Password updated successfully');
             });
         }
     }
@@ -57,11 +57,11 @@ document.addEventListener('DOMContentLoaded', function () {
             if (this.checked) {
                 // Here you would typically handle enabling 2FA
                 console.log('Two-factor authentication enabled');
-                showNotification('Two-factor authentication enabled');
+                //showNotification('Two-factor authentication enabled');
             } else {
                 // Here you would typically handle disabling 2FA
                 console.log('Two-factor authentication disabled');
-                showNotification('Two-factor authentication disabled');
+                //showNotification('Two-factor authentication disabled');
             }
         });
     }
@@ -75,7 +75,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 // Here you would typically send the preferences data to the server
                 console.log('Saving preferences');
-                showNotification('Preferences saved successfully');
+                //showNotification('Preferences saved successfully');
             });
         }
     }
@@ -89,7 +89,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 e.preventDefault();
                 // Here you would typically send the notification settings to the server
                 console.log('Saving notification settings');
-                showNotification('Notification settings saved successfully');
+                //showNotification('Notification settings saved successfully');
             });
         }
     }
@@ -118,7 +118,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (confirm('Are you sure you want to regenerate this API key? The current key will be invalidated.')) {
                 // Here you would typically send a request to regenerate the key
                 console.log('Regenerating API key');
-                showNotification('API key regenerated successfully');
+                //showNotification('API key regenerated successfully');
             }
         });
     });
@@ -132,7 +132,7 @@ document.addEventListener('DOMContentLoaded', function () {
         btn.addEventListener('click', function () {
             // Here you would typically handle the export
             console.log('Exporting data in format:', this.textContent);
-            showNotification('Data export initiated. You will be notified when it\'s ready.');
+            //showNotification('Data export initiated. You will be notified when it\'s ready.');
         });
     });
 
@@ -140,7 +140,7 @@ document.addEventListener('DOMContentLoaded', function () {
         saveRetentionBtn.addEventListener('click', function () {
             // Here you would typically send the retention settings to the server
             console.log('Saving retention settings');
-            showNotification('Data retention settings saved successfully');
+            //showNotification('Data retention settings saved successfully');
         });
     }
 
@@ -149,7 +149,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (confirm('WARNING: This action cannot be undone. Are you sure you want to permanently delete your account and all associated data?')) {
                 // Here you would typically send a request to delete the account
                 console.log('Deleting account');
-                showNotification('Account deletion initiated. You will be logged out shortly.');
+                //showNotification('Account deletion initiated. You will be logged out shortly.');
 
                 // Redirect to logout page after a delay
                 setTimeout(() => {

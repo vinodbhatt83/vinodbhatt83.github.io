@@ -96,13 +96,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Validate form
         if (!email || !name || !role) {
-            showNotification('Please fill in all required fields', 'error');
+            //showNotification('Please fill in all required fields', 'error');
             return;
         }
 
         // In a real application, this would send an API request
         // For demo purposes, we'll just show a notification
-        showNotification(`Invitation sent to ${email}`, 'success');
+        //showNotification(`Invitation sent to ${email}`, 'success');
 
         // Add the new user to the table (for demo purposes)
         addNewUserToTable({
@@ -248,7 +248,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const userTeam = row.querySelector('td:nth-child(4)').textContent;
 
         // In a real app, this would open an edit modal with the data pre-filled
-        showNotification(`Editing user: ${userName}`, 'info');
+        //showNotification(`Editing user: ${userName}`, 'info');
 
         // For demo purposes, we'll just log the data
         console.log('Edit user:', {
@@ -273,7 +273,7 @@ document.addEventListener('DOMContentLoaded', function () {
             row.remove();
 
             // Show notification
-            showNotification(`User ${userName} has been deleted`, 'success');
+            //showNotification(`User ${userName} has been deleted`, 'success');
 
             // Add to recent activity
             addActivityItem({
@@ -291,13 +291,13 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Validate form
         if (!teamName) {
-            showNotification('Please enter a team name', 'error');
+            //showNotification('Please enter a team name', 'error');
             return;
         }
 
         // In a real application, this would send an API request
         // For demo purposes, we'll just show a notification
-        showNotification(`Team ${teamName} created successfully`, 'success');
+        //showNotification(`Team ${teamName} created successfully`, 'success');
 
         // Add the new team to the grid (for demo purposes)
         addNewTeamToGrid({

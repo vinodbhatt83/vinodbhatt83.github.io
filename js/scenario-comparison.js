@@ -95,7 +95,7 @@ document.addEventListener('DOMContentLoaded', function () {
         updateSensitivityAnalysis();
 
         // Show notification
-        showNotification(`Comparing ${formatScenarioName(baseline)} to ${formatScenarioName(comparison)}`, 'info');
+        //showNotification(`Comparing ${formatScenarioName(baseline)} to ${formatScenarioName(comparison)}`, 'info');
     }
 
     function formatScenarioName(scenario) {
@@ -214,7 +214,7 @@ document.addEventListener('DOMContentLoaded', function () {
         console.log(`View changed to: ${view}`);
 
         // Show a notification about the view change
-        showNotification(`Switched to ${view} view`, 'info');
+        //showNotification(`Switched to ${view} view`, 'info');
     }
 
     function updatePerformanceChart() {
@@ -251,17 +251,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function exportToExcel() {
         // In a real application, this would export the data to Excel
-        showNotification('Exporting to Excel...', 'info');
+        //showNotification('Exporting to Excel...', 'info');
 
         // Simulate export completion
         setTimeout(() => {
-            showNotification('Export complete!', 'success');
+            //showNotification('Export complete!', 'success');
         }, 1500);
     }
 
     function createNewScenario() {
         // In a real application, this would open a modal to create a new scenario
-        showNotification('Creating new scenario...', 'info');
+        //showNotification('Creating new scenario...', 'info');
 
         // Redirect to underwriting page with new scenario flag
         setTimeout(() => {
@@ -274,7 +274,7 @@ document.addEventListener('DOMContentLoaded', function () {
         const scenario = comparisonSelect.value;
 
         // Show confirmation
-        showNotification(`Applying ${formatScenarioName(scenario)} to underwriting...`, 'info');
+        //showNotification(`Applying ${formatScenarioName(scenario)} to underwriting...`, 'info');
 
         // Redirect to underwriting page with selected scenario
         setTimeout(() => {

@@ -12,7 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (newDealBtn) {
         newDealBtn.addEventListener('click', function () {
             window.location.href = 'new-deal.html';
-            showNotification('New deal creation feature will be available in the next release.', 'info');
+            ////showNotification('New deal creation feature will be available in the next release.', 'info');
         });
     }
 });
@@ -31,9 +31,9 @@ function initDealCards() {
                 window.location.href = 'deal-underwriting.html';
             } else if (dealName === 'Hampton Inn & Suites') {
                 // Show notification for other cards
-                showNotification(`Opening deal: ${dealName}`, 'info');
+                //showNotification(`Opening deal: ${dealName}`, 'info');
             } else {
-                showNotification(`Opening deal: ${dealName}`, 'info');
+                //showNotification(`Opening deal: ${dealName}`, 'info');
             }
         });
 
@@ -42,7 +42,7 @@ function initDealCards() {
         if (menuBtn) {
             menuBtn.addEventListener('click', function (e) {
                 e.stopPropagation(); // Prevent card click
-                showNotification('Card menu options will be available in the next release.', 'info');
+                //showNotification('Card menu options will be available in the next release.', 'info');
             });
         }
     });
@@ -58,7 +58,7 @@ function initFilters() {
             const filterValue = this.value;
 
             // In a real application, this would filter the deals
-            showNotification(`Filtering deals by ${filterType}: ${filterValue}`, 'info');
+            //showNotification(`Filtering deals by ${filterType}: ${filterValue}`, 'info');
         });
     });
 
@@ -70,7 +70,7 @@ function initFilters() {
             const searchTerm = searchInput.value.trim();
 
             if (searchTerm.length > 0) {
-                showNotification(`Searching for: "${searchTerm}"`, 'info');
+                //showNotification(`Searching for: "${searchTerm}"`, 'info');
 
                 // In a real application, this would search the deals
             }
@@ -90,7 +90,7 @@ function makeDraggable() {
 // Handle stage change for a deal
 function changeDealStage(dealId, newStage) {
     // This would update the deal's stage in a real application
-    showNotification(`Deal moved to ${newStage} stage.`, 'success');
+    //showNotification(`Deal moved to ${newStage} stage.`, 'success');
 
     // Move the card to the new column (in a real app)
     console.log(`Moving deal ${dealId} to ${newStage} stage`);
@@ -99,7 +99,7 @@ function changeDealStage(dealId, newStage) {
 // Create a new deal
 function createNewDeal() {
     // This would open a form to create a new deal in a real application
-    showNotification('New deal creation form will be available in the next release.', 'info');
+    //showNotification('New deal creation form will be available in the next release.', 'info');
 }
 
 // Get deal details

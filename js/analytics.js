@@ -24,7 +24,7 @@ function initFilters() {
             const filterValue = this.value;
 
             // In a real application, this would filter the data
-            showNotification(`Filtering data by ${filterType}: ${filterValue}`, 'info');
+            //showNotification(`Filtering data by ${filterType}: ${filterValue}`, 'info');
 
             // Update charts and tables based on filter
             updateVisualizations();
@@ -42,7 +42,7 @@ function initChartControls() {
             const metric = this.value;
 
             // In a real application, this would update the chart
-            showNotification(`Updating chart to show ${metric} trend`, 'info');
+            //showNotification(`Updating chart to show ${metric} trend`, 'info');
 
             // Update chart visualization
             updateTrendChart(metric);
@@ -54,7 +54,7 @@ function initChartControls() {
             const market = this.value;
 
             // In a real application, this would update the chart
-            showNotification(`Updating chart to show data for ${market}`, 'info');
+            //showNotification(`Updating chart to show data for ${market}`, 'info');
 
             // Update chart visualization
             updateTrendChart(null, market);
@@ -92,7 +92,7 @@ function initTableSorting() {
             this.classList.add(`sorted-${newDirection}`);
 
             // In a real application, this would sort the table
-            showNotification(`Sorting table by ${this.textContent} (${newDirection === 'asc' ? 'Ascending' : 'Descending'})`, 'info');
+            //showNotification(`Sorting table by ${this.textContent} (${newDirection === 'asc' ? 'Ascending' : 'Descending'})`, 'info');
 
             // Sort the table
             sortTable(table, columnIndex, newDirection);
@@ -136,11 +136,11 @@ function initExportButton() {
 
     if (exportButton) {
         exportButton.addEventListener('click', function () {
-            showNotification('Preparing to export analytics report...', 'info');
+            //showNotification('Preparing to export analytics report...', 'info');
 
             // Simulate export delay
             setTimeout(() => {
-                showNotification('Analytics report exported successfully!', 'success');
+                //showNotification('Analytics report exported successfully!', 'success');
             }, 1500);
         });
     }
@@ -155,7 +155,7 @@ function updateVisualizations() {
     // Simulate chart updates with slight delay to show loading
     // In a real app, this would fetch and update data
     setTimeout(() => {
-        showNotification('Visualizations updated with new filter criteria', 'success');
+        //showNotification('Visualizations updated with new filter criteria', 'success');
     }, 800);
 }
 
@@ -170,7 +170,7 @@ function updateTrendChart(metric, market) {
 
     // Simulate chart update delay
     setTimeout(() => {
-        showNotification('Chart updated successfully', 'success');
+        //showNotification('Chart updated successfully', 'success');
     }, 500);
 }
 

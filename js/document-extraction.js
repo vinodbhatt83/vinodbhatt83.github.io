@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const approveAllBtn = document.querySelector('.validation-actions .btn-primary');
     if (approveAllBtn) {
         approveAllBtn.addEventListener('click', function () {
-            showNotification('All fields approved', 'success');
+            //showNotification('All fields approved', 'success');
             // Simulate moving to next step
             updateProgressStep(4); // Move to mapping step
         });
@@ -51,14 +51,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const editSelectedBtn = document.querySelector('.validation-actions .btn-secondary:nth-child(2)');
     if (editSelectedBtn) {
         editSelectedBtn.addEventListener('click', function () {
-            showNotification('Edit mode enabled', 'info');
+            //showNotification('Edit mode enabled', 'info');
         });
     }
 
     const rejectSelectedBtn = document.querySelector('.validation-actions .btn-secondary:first-child');
     if (rejectSelectedBtn) {
         rejectSelectedBtn.addEventListener('click', function () {
-            showNotification('Selected fields rejected', 'warning');
+            //showNotification('Selected fields rejected', 'warning');
         });
     }
 
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     mappingOptions.forEach(option => {
         option.addEventListener('change', function () {
-            showNotification(`Data will be mapped to: ${this.nextElementSibling.querySelector('strong').textContent}`, 'info');
+            //showNotification(`Data will be mapped to: ${this.nextElementSibling.querySelector('strong').textContent}`, 'info');
         });
     });
 
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', function () {
             const selectedMapping = document.querySelector('.mapping-option input[type="radio"]:checked');
             if (selectedMapping) {
                 const mappingDestination = selectedMapping.nextElementSibling.querySelector('strong').textContent;
-                showNotification(`Extraction completed. Data mapped to ${mappingDestination}`, 'success');
+                //showNotification(`Extraction completed. Data mapped to ${mappingDestination}`, 'success');
 
                 // Simulate completion
                 updateProgressStep(5);
@@ -88,7 +88,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     window.location.href = 'document-processing.html';
                 }, 1500);
             } else {
-                showNotification('Please select a mapping destination', 'error');
+                //showNotification('Please select a mapping destination', 'error');
             }
         });
     }
@@ -115,7 +115,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentPage--;
                 updatePageIndicator();
                 // Here you would normally update the document preview
-                showNotification(`Showing page ${currentPage}`, 'info');
+                //showNotification(`Showing page ${currentPage}`, 'info');
             }
         });
 
@@ -124,7 +124,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 currentPage++;
                 updatePageIndicator();
                 // Here you would normally update the document preview
-                showNotification(`Showing page ${currentPage}`, 'info');
+                //showNotification(`Showing page ${currentPage}`, 'info');
             }
         });
 
@@ -464,7 +464,7 @@ function initializeDocumentIntelligence() {
             const row = field.closest('tr');
             if (row) {
                 row.classList.add('highlight-warning');
-                showNotification(`Low confidence detected for field: ${row.querySelector('td:first-child').textContent}`, 'warning');
+                //showNotification(`Low confidence detected for field: ${row.querySelector('td:first-child').textContent}`, 'warning');
             }
         });
     }, 2000);

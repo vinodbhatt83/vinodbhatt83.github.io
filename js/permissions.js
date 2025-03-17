@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Close the modal and show success message
             createRoleModal.style.display = 'none';
-            showNotification('Role created successfully');
+            //showNotification('Role created successfully');
         });
     }
 
@@ -72,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
         configureResourceBtn.addEventListener('click', function () {
             // Here you would typically show a modal or navigate to resource configuration
             console.log('Configure resource access clicked');
-            showNotification('Resource access configuration is coming soon');
+            //showNotification('Resource access configuration is coming soon');
         });
     }
 
@@ -87,7 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             // Here you would typically show an edit modal or navigate to policy edit page
             console.log('Edit policy:', policyName);
-            showNotification('Policy editor is coming soon');
+            //showNotification('Policy editor is coming soon');
         });
     });
 
@@ -100,7 +100,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Here you would typically send a request to delete the policy
                 console.log('Deleting policy:', policyName);
                 policyItem.remove();
-                showNotification('Policy deleted successfully');
+                //showNotification('Policy deleted successfully');
             }
         });
     });
@@ -117,7 +117,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 // Here you would typically filter the audit log based on the selected filters
                 console.log('Filter changed:', this.id, 'Value:', this.value);
                 // For demo purposes, let's just show a notification
-                showNotification('Audit log filtered');
+                //showNotification('Audit log filtered');
             });
         }
     });
@@ -128,7 +128,7 @@ document.addEventListener('DOMContentLoaded', function () {
         exportLogBtn.addEventListener('click', function () {
             // Here you would typically handle the log export
             console.log('Exporting audit log');
-            showNotification('Audit log export initiated. You will be notified when it\'s ready.');
+            //showNotification('Audit log export initiated. You will be notified when it\'s ready.');
         });
     }
 

@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (newDealBtn) {
         newDealBtn.addEventListener('click', function () {
             window.location.href = 'new-deal.html';
-            showNotification('New deal creation feature will be available in the next release.', 'info');
+            //showNotification('New deal creation feature will be available in the next release.', 'info');
         });
 
         // Simulate RevPAR and other charts
@@ -32,7 +32,7 @@ document.addEventListener('DOMContentLoaded', function () {
             dealCards.forEach(card => {
                 card.addEventListener('click', function () {
                     const dealName = this.querySelector('h3').textContent;
-                    showNotification(`Opening deal: ${dealName}`, 'info');
+                    //showNotification(`Opening deal: ${dealName}`, 'info');
 
                     // In a real application, this would navigate to the deal page
                     // window.location.href = `deal-underwriting.html?deal=${encodeURIComponent(dealName)}`;

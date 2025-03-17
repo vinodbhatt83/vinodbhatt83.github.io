@@ -1,0 +1,1450 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Documents repository for hotel acquisition information - INVEST PLATFORM">
+    <title>Documents - INVEST PLATFORM</title>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+    <header class="header" role="banner">
+        <div class="logo">INVEST PLATFORM</div>
+        <div class="search-container">
+            <label for="global-search" class="sr-only">Search platform</label>
+            <input type="text" id="global-search" placeholder="Search..." class="search-input"
+                aria-label="Search platform">
+            <button class="search-button" aria-label="Submit search">
+                <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                    aria-hidden="true">
+                    <path
+                        d="M15.5 14H14.71L14.43 13.73C15.41 12.59 16 11.11 16 9.5C16 5.91 13.09 3 9.5 3C5.91 3 3 5.91 3 9.5C3 13.09 5.91 16 9.5 16C11.11 16 12.59 15.41 13.73 14.43L14 14.71V15.5L19 20.49L20.49 19L15.5 14ZM9.5 14C7.01 14 5 11.99 5 9.5C5 7.01 7.01 5 9.5 5C11.99 5 14 7.01 14 9.5C14 11.99 11.99 14 9.5 14Z"
+                        fill="#64748B" />
+                </svg>
+            </button>
+        </div>
+        <div class="user-profile">
+            <span>John Smith</span>
+            <div class="avatar" aria-label="User profile: John Smith">JS</div>
+        </div>
+    </header>
+
+    <div class="container">
+        <nav class="side-nav">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M3 12L5 10M5 10L12 3L19 10M5 10V20C5 20.5523 5.44772 21 6 21H9M19 10L21 12M19 10V20C19 20.5523 18.5523 21 18 21H15M9 21C9.55228 21 10 20.5523 10 20V16C10 15.4477 10.4477 15 11 15H13C13.5523 15 14 15.4477 14 16V20C14 20.5523 14.4477 21 15 21M9 21H15"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Dashboard
+                    </a>
+                </li>
+                <li>
+                    <a href="pipeline.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 5H7C5.89543 5 5 5.89543 5 7V19C5 20.1046 5.89543 21 7 21H17C18.1046 21 19 20.1046 19 19V7C19 5.89543 18.1046 5 17 5H15M9 5C9 6.10457 9.89543 7 11 7H13C14.1046 7 15 6.10457 15 5M9 5C9 3.89543 9.89543 3 11 3H13C14.1046 3 15 3.89543 15 5M12 12H15M12 16H15M9 12H9.01M9 16H9.01"
+                                stroke="white" stroke-width="2" stroke-linecap="round" />
+                        </svg>
+                        Pipeline
+                    </a>
+                </li>
+                <li>
+                    <a href="portfolio.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M19 4H5C3.89543 4 3 4.89543 3 6V20C3 21.1046 3.89543 22 5 22H19C20.1046 22 21 21.1046 21 20V6C21 4.89543 20.1046 4 19 4Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" />
+                            <path
+                                d="M16 2V6M8 2V6M3 10H21M8 14H8.01M12 14H12.01M16 14H16.01M8 18H8.01M12 18H12.01M16 18H16.01"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Portfolio
+                    </a>
+                </li>
+                <li class="active">
+                    <a href="analytics.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M16 8V16M12 11V16M8 14V16M6 20H18C19.1046 20 20 19.1046 20 18V6C20 4.89543 19.1046 4 18 4H6C4.89543 4 4 4.89543 4 6V18C4 19.1046 4.89543 20 6 20Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Analytics
+                    </a>
+                </li>
+                <li>
+                    <a href="documents.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 12H15M9 16H15M9 8H15M5 21H19C20.1046 21 21 20.1046 21 19V5C21 3.89543 20.1046 3 19 3H5C3.89543 3 3 3.89543 3 5V19C3 20.1046 3.89543 21 5 21Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Documents
+                    </a>
+                </li>
+                <li>
+                    <a href="models.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M4 7V4H20V7M4 11V17C4 19.2091 5.79086 21 8 21H16C18.2091 21 20 19.2091 20 17V11M12 8V16M8 12H16"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Models
+                    </a>
+                </li>
+                <li>
+                    <a href="task-management.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M9 11L12 14L22 4M21 12V19C21 20.1046 20.1046 21 19 21H5C3.89543 21 3 20.1046 3 19V5C3 3.89543 3.89543 3 5 3H16"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Tasks
+                    </a>
+                </li>
+                <li>
+                    <a href="settings.html">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M10.3246 4.31731C10.751 2.5609 13.249 2.5609 13.6754 4.31731C13.9508 5.45193 15.2507 5.99038 16.2478 5.38285C17.7913 4.44239 19.5576 6.2087 18.6172 7.75218C18.0096 8.74925 18.5481 10.0492 19.6827 10.3246C21.4391 10.751 21.4391 13.249 19.6827 13.6754C18.5481 13.9508 18.0096 15.2507 18.6172 16.2478C19.5576 17.7913 17.7913 19.5576 16.2478 18.6172C15.2507 18.0096 13.9508 18.5481 13.6754 19.6827C13.249 21.4391 10.751 21.4391 10.3246 19.6827C10.0492 18.5481 8.74926 18.0096 7.75219 18.6172C6.2087 19.5576 4.44239 17.7913 5.38285 16.2478C5.99038 15.2507 5.45193 13.9508 4.31731 13.6754C2.5609 13.249 2.5609 10.751 4.31731 10.3246C5.45193 10.0492 5.99037 8.74926 5.38285 7.75218C4.44239 6.2087 6.2087 4.44239 7.75219 5.38285C8.74926 5.99037 10.0492 5.45193 10.3246 4.31731Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                            <path
+                                d="M15 12C15 13.6569 13.6569 15 12 15C10.3431 15 9 13.6569 9 12C9 10.3431 10.3431 9 12 9C13.6569 9 15 10.3431 15 12Z"
+                                stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                        </svg>
+                        Settings
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main class="content" role="main">
+            <div class="page-header">
+                <h1>DOCUMENTS</h1>
+                <p>Central repository for all property information</p>
+                <button class="btn-primary" id="upload-document-btn" aria-label="Upload Document">
+                    <img src="images/add_icon.svg" alt="" class="btn-icon" aria-hidden="true">
+                    Upload Document
+                </button>
+            </div>
+
+            <div class="filter-bar" role="search" aria-label="Filter documents">
+                <div class="filter-group">
+                    <label for="property-filter">Property</label>
+                    <select id="property-filter" class="filter-select" aria-label="Filter by property">
+                        <option value="all">All Properties</option>
+                        <option value="courtyard">Courtyard by Marriott</option>
+                        <option value="hampton">Hampton Inn & Suites</option>
+                        <option value="hilton">Hilton Garden Inn</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="category-filter">Category</label>
+                    <select id="category-filter" class="filter-select" aria-label="Filter by category">
+                        <option value="all">All Categories</option>
+                        <option value="financials">Financials</option>
+                        <option value="property">Property Information</option>
+                        <option value="market">Market Analysis</option>
+                        <option value="legal">Legal Documents</option>
+                        <option value="media">Media</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label for="date-filter">Date</label>
+                    <select id="date-filter" class="filter-select" aria-label="Filter by date">
+                        <option value="newest">Newest First</option>
+                        <option value="oldest">Oldest First</option>
+                        <option value="last-week">Last Week</option>
+                        <option value="last-month">Last Month</option>
+                    </select>
+                </div>
+                <div class="search-documents">
+                    <label for="document-search" class="sr-only">Search Documents</label>
+                    <input type="text" id="document-search" placeholder="Search Documents..." class="search-input"
+                        aria-label="Search Documents">
+                </div>
+            </div>
+
+            <div class="view-options" role="toolbar" aria-label="View options">
+                <div class="view-tabs" role="tablist" aria-label="View type">
+                    <button class="view-tab active" data-view="list" role="tab" aria-selected="true"
+                        aria-controls="list-view" id="list-tab">
+                        <img src="images/list_icon.svg" alt="" class="tab-icon" aria-hidden="true">
+                        List
+                    </button>
+                    <button class="view-tab" data-view="grid" role="tab" aria-selected="false" aria-controls="grid-view"
+                        id="grid-tab">
+                        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                            aria-hidden="true">
+                            <path
+                                d="M3 3V11H11V3H3ZM9 9H5V5H9V9ZM3 13V21H11V13H3ZM9 19H5V15H9V19ZM13 3V11H21V3H13ZM19 9H15V5H19V9ZM13 13V21H21V13H13ZM19 19H15V15H19V19Z"
+                                fill="currentColor" />
+                        </svg>
+                        Grid
+                    </button>
+                </div>
+                <button class="btn-secondary" id="new-folder-btn" aria-label="Create New Folder">
+                    <img src="images/add_icon.svg" alt="" class="btn-icon" aria-hidden="true">
+                    New Folder
+                </button>
+            </div>
+
+            <nav class="breadcrumb" aria-label="Breadcrumb">
+                <ol>
+                    <li><a href="#" class="breadcrumb-item">All Documents</a></li>
+                    <li><a href="#" class="breadcrumb-item">Courtyard by Marriott</a></li>
+                    <li><span class="breadcrumb-item active" aria-current="location">Financials</span></li>
+                </ol>
+            </nav>
+
+            <div class="documents-container">
+                <div class="folder-grid" role="region" aria-label="Folders">
+                    <div class="folder-card" tabindex="0" role="button"
+                        aria-label="Open Property Information folder containing 12 files">
+                        <div class="folder-icon">
+                            <img src="images/folder_icon.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="folder-info">
+                            <h3>Property Information</h3>
+                            <p>12 files</p>
+                        </div>
+                    </div>
+                    <div class="folder-card" tabindex="0" role="button"
+                        aria-label="Open Market Analysis folder containing 8 files">
+                        <div class="folder-icon">
+                            <img src="images/folder_icon.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="folder-info">
+                            <h3>Market Analysis</h3>
+                            <p>8 files</p>
+                        </div>
+                    </div>
+                    <div class="folder-card" tabindex="0" role="button"
+                        aria-label="Open Legal Documents folder containing 5 files">
+                        <div class="folder-icon">
+                            <img src="images/folder_icon.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="folder-info">
+                            <h3>Legal Documents</h3>
+                            <p>5 files</p>
+                        </div>
+                    </div>
+                    <div class="folder-card" tabindex="0" role="button"
+                        aria-label="Open Media folder containing 24 files">
+                        <div class="folder-icon">
+                            <img src="images/folder_icon.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="folder-info">
+                            <h3>Media</h3>
+                            <p>24 files</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="documents-table" role="region" aria-label="Documents" id="list-view" tabindex="0">
+                    <div class="table-header">
+                        <div class="header-cell file-name" role="columnheader" aria-sort="none">Name</div>
+                        <div class="header-cell file-type" role="columnheader" aria-sort="none">Type</div>
+                        <div class="header-cell file-size" role="columnheader" aria-sort="none">Size</div>
+                        <div class="header-cell file-modified" role="columnheader" aria-sort="descending">Modified</div>
+                        <div class="header-cell file-owner" role="columnheader" aria-sort="none">Owner</div>
+                        <div class="header-cell file-actions" role="columnheader">Actions</div>
+                    </div>
+
+                    <div class="table-row" role="row" tabindex="0"
+                        aria-label="Q1 2025 Financials, Excel file, version 1.3, 2.4 MB, modified March 15, 2025 by Sarah Johnson">
+                        <div class="cell file-name" role="cell">
+                            <img src="images/document_icon.svg" alt="" class="file-icon" aria-hidden="true">
+                            <span>Q1 2025 Financials</span>
+                            <span class="version-badge" aria-label="Version 1.3">v1.3</span>
+                        </div>
+                        <div class="cell file-type" role="cell">XLSX</div>
+                        <div class="cell file-size" role="cell">2.4 MB</div>
+                        <div class="cell file-modified" role="cell">Mar 15, 2025</div>
+                        <div class="cell file-owner" role="cell">
+                            <div class="owner-avatar" aria-hidden="true">SJ</div>
+                            <span>Sarah Johnson</span>
+                        </div>
+                        <div class="cell file-actions" role="cell">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z"
+                                        fill="#64748B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-row" role="row" tabindex="0"
+                        aria-label="Property Valuation, PDF file, version 2.0, 4.1 MB, modified March 12, 2025 by Michael Chen">
+                        <div class="cell file-name" role="cell">
+                            <img src="images/document_icon.svg" alt="" class="file-icon" aria-hidden="true">
+                            <span>Property Valuation</span>
+                            <span class="version-badge" aria-label="Version 2.0">v2.0</span>
+                        </div>
+                        <div class="cell file-type" role="cell">PDF</div>
+                        <div class="cell file-size" role="cell">4.1 MB</div>
+                        <div class="cell file-modified" role="cell">Mar 12, 2025</div>
+                        <div class="cell file-owner" role="cell">
+                            <div class="owner-avatar" aria-hidden="true">MC</div>
+                            <span>Michael Chen</span>
+                        </div>
+                        <div class="cell file-actions" role="cell">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z"
+                                        fill="#64748B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-row" role="row" tabindex="0"
+                        aria-label="STR Competitive Set, PDF file, version 1.0, 3.8 MB, modified March 10, 2025 by John Smith">
+                        <div class="cell file-name" role="cell">
+                            <img src="images/document_icon.svg" alt="" class="file-icon" aria-hidden="true">
+                            <span>STR Competitive Set</span>
+                            <span class="version-badge" aria-label="Version 1.0">v1.0</span>
+                        </div>
+                        <div class="cell file-type" role="cell">PDF</div>
+                        <div class="cell file-size" role="cell">3.8 MB</div>
+                        <div class="cell file-modified" role="cell">Mar 10, 2025</div>
+                        <div class="cell file-owner" role="cell">
+                            <div class="owner-avatar" aria-hidden="true">JS</div>
+                            <span>John Smith</span>
+                        </div>
+                        <div class="cell file-actions" role="cell">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z"
+                                        fill="#64748B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-row" role="row" tabindex="0"
+                        aria-label="Capital Improvements, Word document, version 1.2, 1.2 MB, modified March 8, 2025 by Emily Rodriguez">
+                        <div class="cell file-name" role="cell">
+                            <img src="images/document_icon.svg" alt="" class="file-icon" aria-hidden="true">
+                            <span>Capital Improvements</span>
+                            <span class="version-badge" aria-label="Version 1.2">v1.2</span>
+                        </div>
+                        <div class="cell file-type" role="cell">DOCX</div>
+                        <div class="cell file-size" role="cell">1.2 MB</div>
+                        <div class="cell file-modified" role="cell">Mar 8, 2025</div>
+                        <div class="cell file-owner" role="cell">
+                            <div class="owner-avatar" aria-hidden="true">ER</div>
+                            <span>Emily Rodriguez</span>
+                        </div>
+                        <div class="cell file-actions" role="cell">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z"
+                                        fill="#64748B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="table-row" role="row" tabindex="0"
+                        aria-label="Floor Plans - Updated, DWG file, version 2.1, 8.7 MB, modified March 5, 2025 by David Wilson">
+                        <div class="cell file-name" role="cell">
+                            <img src="images/document_icon.svg" alt="" class="file-icon" aria-hidden="true">
+                            <span>Floor Plans - Updated</span>
+                            <span class="version-badge" aria-label="Version 2.1">v2.1</span>
+                        </div>
+                        <div class="cell file-type" role="cell">DWG</div>
+                        <div class="cell file-size" role="cell">8.7 MB</div>
+                        <div class="cell file-modified" role="cell">Mar 5, 2025</div>
+                        <div class="cell file-owner" role="cell">
+                            <div class="owner-avatar" aria-hidden="true">DW</div>
+                            <span>David Wilson</span>
+                        </div>
+                        <div class="cell file-actions" role="cell">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path
+                                        d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z"
+                                        fill="#64748B" />
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Grid view (hidden by default) -->
+                <!-- <div class="documents-grid" id="grid-view" role="region" aria-label="Documents grid view" hidden>
+                    <div class="document-card" tabindex="0" role="button" aria-label="Q1 2025 Financials, Excel file, version 1.3, 2.4 MB, modified March 15, 2025 by Sarah Johnson">
+                        <div class="document-icon">
+                            <img src="images/document_icon.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="document-info">
+                            <h3>Q1 2025 Financials</h3>
+                            <span class="document-type">XLSX</span>
+                            <span class="version-badge">v1.3</span>
+                        </div>
+                        <div class="document-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Size:</span>
+                                <span class="meta-value">2.4 MB</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Modified:</span>
+                                <span class="meta-value">Mar 15, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Owner:</span>
+                                <span class="meta-value">Sarah Johnson</span>
+                            </div>
+                        </div>
+                        <div class="document-actions">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z" fill="#64748B"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="document-card" tabindex="0" role="button" aria-label="Property Valuation, PDF file, version 2.0, 4.1 MB, modified March 12, 2025 by Michael Chen">
+                        <div class="document-icon">
+                            <img src="images/document_icon.svg" alt="" aria-hidden="true">
+                        </div>
+                        <div class="document-info">
+                            <h3>Property Valuation</h3>
+                            <span class="document-type">PDF</span>
+                            <span class="version-badge">v2.0</span>
+                        </div>
+                        <div class="document-meta">
+                            <div class="meta-item">
+                                <span class="meta-label">Size:</span>
+                                <span class="meta-value">4.1 MB</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Modified:</span>
+                                <span class="meta-value">Mar 12, 2025</span>
+                            </div>
+                            <div class="meta-item">
+                                <span class="meta-label">Owner:</span>
+                                <span class="meta-value">Michael Chen</span>
+                            </div>
+                        </div>
+                        <div class="document-actions">
+                            <button class="action-btn" aria-label="View document details">
+                                <img src="images/info_icon.svg" alt="Info" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="Share document">
+                                <img src="images/share_icon.svg" alt="Share" aria-hidden="true">
+                            </button>
+                            <button class="action-btn" aria-label="More options" aria-haspopup="true">
+                                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                    <path d="M12 8C13.1 8 14 7.1 14 6C14 4.9 13.1 4 12 4C10.9 4 10 4.9 10 6C10 7.1 10.9 8 12 8ZM12 10C10.9 10 10 10.9 10 12C10 13.1 10.9 14 12 14C13.1 14 14 13.1 14 12C14 10.9 13.1 10 12 10ZM12 16C10.9 16 10 16.9 10 18C10 19.1 10.9 20 12 20C13.1 20 14 19.1 14 18C14 16.9 13.1 16 12 16Z" fill="#64748B"/>
+                                </svg>
+                            </button>
+                        </div>
+                    </div>
+                    
+                </div> -->
+            </div>
+
+            <nav class="pagination" role="navigation" aria-label="Pagination">
+                <button class="pagination-btn" disabled aria-label="Previous page" aria-disabled="true">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M15.41 7.41L14 6L8 12L14 18L15.41 16.59L10.83 12L15.41 7.41Z" fill="currentColor" />
+                    </svg>
+                </button>
+                <button class="pagination-btn active" aria-current="page" aria-label="Page 1">1</button>
+                <button class="pagination-btn" aria-label="Page 2">2</button>
+                <button class="pagination-btn" aria-label="Page 3">3</button>
+                <span class="pagination-ellipsis" aria-hidden="true">...</span>
+                <button class="pagination-btn" aria-label="Page 10">10</button>
+                <button class="pagination-btn" aria-label="Next page">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M10 6L8.59 7.41L13.17 12L8.59 16.59L10 18L16 12L10 6Z" fill="currentColor" />
+                    </svg>
+                </button>
+            </nav>
+        </main>
+
+        <aside class="document-details" id="document-details" role="complementary" aria-label="Document Details" hidden>
+            <div class="details-header">
+                <h2>Document Details</h2>
+                <button class="close-details" aria-label="Close details panel">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="#64748B" />
+                    </svg>
+                </button>
+            </div>
+
+            <div class="document-preview">
+                <img src="images/document_icon.svg" alt="" class="preview-icon" aria-hidden="true">
+                <h3>Q1 2025 Financials</h3>
+                <p class="document-type">Excel Spreadsheet (XLSX)</p>
+            </div>
+
+            <div class="details-section">
+                <h4>Information</h4>
+                <dl>
+                    <div class="detail-row">
+                        <dt class="detail-label">Size</dt>
+                        <dd class="detail-value">2.4 MB</dd>
+                    </div>
+                    <div class="detail-row">
+                        <dt class="detail-label">Created</dt>
+                        <dd class="detail-value">Mar 10, 2025</dd>
+                    </div>
+                    <div class="detail-row">
+                        <dt class="detail-label">Modified</dt>
+                        <dd class="detail-value">Mar 15, 2025</dd>
+                    </div>
+                    <div class="detail-row">
+                        <dt class="detail-label">Owner</dt>
+                        <dd class="detail-value">Sarah Johnson</dd>
+                    </div>
+                </dl>
+            </div>
+
+            <div class="details-section">
+                <h4>Versions</h4>
+                <ul class="version-list">
+                    <li class="version-item current">
+                        <div class="version-info">
+                            <img src="images/version_icon.svg" alt="" class="version-icon" aria-hidden="true">
+                            <div>
+                                <span class="version-number">v1.3</span>
+                                <span class="version-date">Mar 15, 2025</span>
+                            </div>
+                        </div>
+                        <span class="version-label">Current</span>
+                    </li>
+                    <li class="version-item">
+                        <div class="version-info">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#64748B" />
+                                <path
+                                    d="M12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17ZM13 7H11V12H13V7Z"
+                                    fill="#64748B" />
+                            </svg>
+                            <div>
+                                <span class="version-number">v1.2</span>
+                                <span class="version-date">Mar 13, 2025</span>
+                            </div>
+                        </div>
+                        <button class="btn-text" aria-label="Restore version 1.2 from March 13, 2025">Restore</button>
+                    </li>
+                    <li class="version-item">
+                        <div class="version-info">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#64748B" />
+                                <path
+                                    d="M12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17ZM13 7H11V12H13V7Z"
+                                    fill="#64748B" />
+                            </svg>
+                            <div>
+                                <span class="version-number">v1.1</span>
+                                <span class="version-date">Mar 12, 2025</span>
+                            </div>
+                        </div>
+                        <button class="btn-text" aria-label="Restore version 1.1 from March 12, 2025">Restore</button>
+                    </li>
+                    <li class="version-item">
+                        <div class="version-info">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM12 20C7.59 20 4 16.41 4 12C4 7.59 7.59 4 12 4C16.41 4 20 7.59 20 12C20 16.41 16.41 20 12 20Z"
+                                    fill="#64748B" />
+                                <path
+                                    d="M12 17C13.1 17 14 16.1 14 15C14 13.9 13.1 13 12 13C10.9 13 10 13.9 10 15C10 16.1 10.9 17 12 17ZM13 7H11V12H13V7Z"
+                                    fill="#64748B" />
+                            </svg>
+                            <div>
+                                <span class="version-number">v1.0</span>
+                                <span class="version-date">Mar 10, 2025</span>
+                            </div>
+                        </div>
+                        <button class="btn-text" aria-label="Restore version 1.0 from March 10, 2025">Restore</button>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="details-section">
+                <h4>Recent Activity</h4>
+                <ul class="activity-list">
+                    <li class="activity-item">
+                        <div class="activity-avatar" aria-hidden="true">SJ</div>
+                        <div class="activity-content">
+                            <p><strong>Sarah Johnson</strong> updated this file</p>
+                            <span class="activity-time">2 days ago</span>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-avatar" aria-hidden="true">MC</div>
+                        <div class="activity-content">
+                            <p><strong>Michael Chen</strong> commented</p>
+                            <span class="activity-time">3 days ago</span>
+                        </div>
+                    </li>
+                    <li class="activity-item">
+                        <div class="activity-avatar" aria-hidden="true">JS</div>
+                        <div class="activity-content">
+                            <p><strong>John Smith</strong> viewed this file</p>
+                            <span class="activity-time">4 days ago</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="details-section">
+                <h4>Shared With</h4>
+                <ul class="shared-list">
+                    <li class="shared-item">
+                        <div class="shared-info">
+                            <div class="shared-avatar" aria-hidden="true">Team</div>
+                            <span>Acquisition Team</span>
+                        </div>
+                        <span class="permission-badge edit" aria-label="Has edit permission">Edit</span>
+                    </li>
+                    <li class="shared-item">
+                        <div class="shared-info">
+                            <div class="shared-avatar" aria-hidden="true">IC</div>
+                            <span>Investment Committee</span>
+                        </div>
+                        <span class="permission-badge view" aria-label="Has view permission">View</span>
+                    </li>
+                    <li class="shared-item">
+                        <div class="shared-info">
+                            <div class="shared-avatar" aria-hidden="true">ABC</div>
+                            <span>Lender - ABC Bank</span>
+                        </div>
+                        <span class="permission-badge view" aria-label="Has view permission">View</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="details-section">
+                <h4>Tags</h4>
+                <div class="tags-container" role="list" aria-label="Document tags">
+                    <span class="tag" role="listitem">#Financials</span>
+                    <span class="tag" role="listitem">#Q1</span>
+                    <span class="tag" role="listitem">#Nashville</span>
+                    <span class="tag" role="listitem">#Marriott</span>
+                </div>
+            </div>
+
+            <div class="details-actions">
+                <button class="btn-primary" aria-label="Download document">Download</button>
+                <button class="btn-secondary" aria-label="Preview document">Preview</button>
+            </div>
+        </aside>
+    </div>
+
+    <!-- Upload Modal -->
+    <div class="modal" id="upload-modal" role="dialog" aria-labelledby="upload-modal-title" aria-modal="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="upload-modal-title">Upload Document</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="#64748B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="upload-area" tabindex="0" role="button"
+                    aria-label="Drag and drop files here or click to select files">
+                    <svg width="48" height="48" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19.35 10.04C18.67 6.59 15.64 4 12 4C9.11 4 6.6 5.64 5.35 8.04C2.34 8.36 0 10.91 0 14C0 17.31 2.69 20 6 20H19C21.76 20 24 17.76 24 15C24 12.36 21.95 10.22 19.35 10.04ZM14 13V17H10V13H7L12 8L17 13H14Z"
+                            fill="#64748B" />
+                    </svg>
+                    <p>Drag and drop files here or</p>
+                    <button class="btn-primary" id="select-files-btn">Select Files</button>
+                    <input type="file" id="file-upload" multiple hidden>
+                </div>
+
+                <div class="upload-options">
+                    <div class="form-group">
+                        <label for="upload-property">Property</label>
+                        <select id="upload-property" class="form-select" aria-label="Select property">
+                            <option value="courtyard">Courtyard by Marriott</option>
+                            <option value="hampton">Hampton Inn & Suites</option>
+                            <option value="hilton">Hilton Garden Inn</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="upload-category">Category</label>
+                        <select id="upload-category" class="form-select" aria-label="Select category">
+                            <option value="financials">Financials</option>
+                            <option value="property">Property Information</option>
+                            <option value="market">Market Analysis</option>
+                            <option value="legal">Legal Documents</option>
+                            <option value="media">Media</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="upload-tags">Tags</label>
+                        <input type="text" id="upload-tags" class="form-input"
+                            placeholder="Add tags separated by commas" aria-label="Add tags separated by commas">
+                    </div>
+
+                    <fieldset class="form-group">
+                        <legend>Version Control</legend>
+                        <div class="radio-group">
+                            <label class="radio-label">
+                                <input type="radio" name="version" value="new" checked>
+                                Create new version if file exists
+                            </label>
+                            <label class="radio-label">
+                                <input type="radio" name="version" value="replace">
+                                Replace existing file
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <fieldset class="form-group">
+                        <legend>Access Permissions</legend>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="permissions" value="team" checked>
+                                Acquisition Team (Edit)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="permissions" value="committee">
+                                Investment Committee (View)
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="permissions" value="lender">
+                                Lender - ABC Bank (View)
+                            </label>
+                        </div>
+                    </fieldset>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" aria-label="Cancel upload">Cancel</button>
+                <button class="btn-primary" aria-label="Upload files">Upload</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Share Modal -->
+    <div class="modal" id="share-modal" role="dialog" aria-labelledby="share-modal-title" aria-modal="true" hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="share-modal-title">Share Document</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="#64748B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="share-document-info">
+                    <img src="images/document_icon.svg" alt="" class="share-doc-icon" aria-hidden="true">
+                    <div>
+                        <h3>Q1 2025 Financials</h3>
+                        <p>XLSX • 2.4 MB</p>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="share-users">People</label>
+                    <div class="share-input-container">
+                        <input type="text" id="share-users" class="form-input"
+                            placeholder="Add email addresses or names" aria-label="Add people to share with">
+                        <button class="btn-secondary" aria-label="Add people">Add</button>
+                    </div>
+                </div>
+
+                <ul class="share-list" aria-label="People with access">
+                    <li class="share-item">
+                        <div class="share-user-info">
+                            <div class="shared-avatar" aria-hidden="true">Team</div>
+                            <span>Acquisition Team</span>
+                        </div>
+                        <label class="sr-only" for="team-permission">Permission for Acquisition Team</label>
+                        <select id="team-permission" class="permission-select" aria-label="Set permission level">
+                            <option value="edit">Can edit</option>
+                            <option value="comment">Can comment</option>
+                            <option value="view">Can view</option>
+                        </select>
+                        <button class="remove-share" aria-label="Remove Acquisition Team">
+                            <img src="images/delete_icon.svg" alt="" width="16" height="16" aria-hidden="true">
+                        </button>
+                    </li>
+                    <li class="share-item">
+                        <div class="share-user-info">
+                            <div class="shared-avatar" aria-hidden="true">IC</div>
+                            <span>Investment Committee</span>
+                        </div>
+                        <label class="sr-only" for="ic-permission">Permission for Investment Committee</label>
+                        <select id="ic-permission" class="permission-select" aria-label="Set permission level">
+                            <option value="edit">Can edit</option>
+                            <option value="comment">Can comment</option>
+                            <option value="view" selected>Can view</option>
+                        </select>
+                        <button class="remove-share" aria-label="Remove Investment Committee">
+                            <img src="images/delete_icon.svg" alt="" width="16" height="16" aria-hidden="true">
+                        </button>
+                    </li>
+                    <li class="share-item">
+                        <div class="share-user-info">
+                            <div class="shared-avatar" aria-hidden="true">ABC</div>
+                            <span>Lender - ABC Bank</span>
+                        </div>
+                        <label class="sr-only" for="lender-permission">Permission for Lender - ABC Bank</label>
+                        <select id="lender-permission" class="permission-select" aria-label="Set permission level">
+                            <option value="edit">Can edit</option>
+                            <option value="comment">Can comment</option>
+                            <option value="view" selected>Can view</option>
+                        </select>
+                        <button class="remove-share" aria-label="Remove Lender - ABC Bank">
+                            <img src="images/delete_icon.svg" alt="" width="16" height="16" aria-hidden="true">
+                        </button>
+                    </li>
+                </ul>
+
+                <div class="share-options">
+                    <fieldset class="form-group">
+                        <legend>Link Settings</legend>
+                        <div class="checkbox-group">
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="link-settings" value="password">
+                                Require password
+                            </label>
+                            <label class="checkbox-label">
+                                <input type="checkbox" name="link-settings" value="expiration" checked>
+                                Set expiration date
+                            </label>
+                        </div>
+                    </fieldset>
+
+                    <div class="form-group">
+                        <label for="expiration-date">Expiration Date</label>
+                        <input type="date" id="expiration-date" class="form-input" value="2025-04-17"
+                            aria-label="Set expiration date">
+                    </div>
+
+                    <div class="form-group">
+                        <label for="share-message">Message (Optional)</label>
+                        <textarea id="share-message" class="form-textarea" placeholder="Add a message"
+                            aria-label="Add an optional message"></textarea>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" aria-label="Cancel sharing">Cancel</button>
+                <button class="btn-primary" aria-label="Share document">Share</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- New Folder Modal -->
+    <div class="modal" id="new-folder-modal" role="dialog" aria-labelledby="new-folder-modal-title" aria-modal="true"
+        hidden>
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="new-folder-modal-title">Create New Folder</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="#64748B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-group">
+                    <label for="folder-name">Folder Name</label>
+                    <input type="text" id="folder-name" class="form-input" placeholder="Enter folder name"
+                        aria-label="Enter folder name" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="folder-property">Property</label>
+                    <select id="folder-property" class="form-select" aria-label="Select property">
+                        <option value="courtyard">Courtyard by Marriott</option>
+                        <option value="hampton">Hampton Inn & Suites</option>
+                        <option value="hilton">Hilton Garden Inn</option>
+                    </select>
+                </div>
+
+                <fieldset class="form-group">
+                    <legend>Access Permissions</legend>
+                    <div class="checkbox-group">
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="folder-permissions" value="team" checked>
+                            Acquisition Team (Edit)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="folder-permissions" value="committee">
+                            Investment Committee (View)
+                        </label>
+                        <label class="checkbox-label">
+                            <input type="checkbox" name="folder-permissions" value="lender">
+                            Lender - ABC Bank (View)
+                        </label>
+                    </div>
+                </fieldset>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" aria-label="Cancel folder creation">Cancel</button>
+                <button class="btn-primary" aria-label="Create folder">Create Folder</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Analysis Modal -->
+    <div class="modal" id="ai-analysis-modal" role="dialog" aria-labelledby="ai-analysis-modal-title" aria-modal="true"
+        hidden>
+        <div class="modal-content modal-lg">
+            <div class="modal-header">
+                <h2 id="ai-analysis-modal-title">AI Document Analysis</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="#64748B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="ai-analysis-header">
+                    <div class="document-info">
+                        <img src="images/document_icon.svg" alt="" class="document-icon" aria-hidden="true">
+                        <div>
+                            <h3>Q1 2025 Financials</h3>
+                            <p>XLSX • 2.4 MB • Last modified Mar 15, 2025</p>
+                        </div>
+                    </div>
+
+                    <div class="ai-actions">
+                        <button class="btn-secondary" aria-label="Generate summary">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z"
+                                    fill="currentColor" />
+                                <path d="M7 7H17V9H7V7ZM7 11H17V13H7V11ZM7 15H14V17H7V15Z" fill="currentColor" />
+                            </svg>
+                            Generate Summary
+                        </button>
+                        <button class="btn-secondary" aria-label="Compare versions">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M9.01 14H2V16H9.01V19L13 15L9.01 11V14ZM14.99 13V10H22V8H14.99V5L11 9L14.99 13Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Compare Versions
+                        </button>
+                        <button class="btn-secondary" aria-label="Extract data">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path
+                                    d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z"
+                                    fill="currentColor" />
+                            </svg>
+                            Extract Data
+                        </button>
+                    </div>
+                </div>
+
+                <div class="ai-analysis-content">
+                    <div class="ai-section">
+                        <h4>Key Insights</h4>
+                        <ul class="insights-list">
+                            <li>
+                                <div class="insight-icon positive">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 7.58L19 9L10 17Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <p>RevPAR increased by 12.3% compared to previous quarter</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="insight-icon positive">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 7.58L19 9L10 17Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <p>Occupancy rate at 78.5%, exceeding market average by 5.2%</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="insight-icon warning">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM13 17H11V15H13V17ZM13 13H11V7H13V13Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <p>Operating expenses increased by 8.7% compared to budget</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="insight-icon positive">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M12 2C6.48 2 2 6.48 2 12C2 17.52 6.48 22 12 22C17.52 22 22 17.52 22 12C22 6.48 17.52 2 12 2ZM10 17L5 12L6.41 10.59L10 14.17L17.59 7.58L19 9L10 17Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="insight-content">
+                                    <p>Net operating income 4.2% above forecast</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-section">
+                        <h4>Financial Summary</h4>
+                        <div class="financial-summary">
+                            <div class="financial-metric">
+                                <span class="metric-label">Revenue</span>
+                                <span class="metric-value">$2,845,320</span>
+                                <span class="metric-change positive">+8.3%</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="metric-label">Expenses</span>
+                                <span class="metric-value">$1,723,450</span>
+                                <span class="metric-change negative">+8.7%</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="metric-label">NOI</span>
+                                <span class="metric-value">$1,121,870</span>
+                                <span class="metric-change positive">+7.6%</span>
+                            </div>
+                            <div class="financial-metric">
+                                <span class="metric-label">RevPAR</span>
+                                <span class="metric-value">$142.35</span>
+                                <span class="metric-change positive">+12.3%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="ai-section">
+                        <h4>Recommendations</h4>
+                        <ul class="recommendations-list">
+                            <li>
+                                <div class="recommendation-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="recommendation-content">
+                                    <p>Review utility expenses which are 12.4% above budget</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommendation-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="recommendation-content">
+                                    <p>Consider rate increases for weekday corporate bookings based on competitive set
+                                        analysis</p>
+                                </div>
+                            </li>
+                            <li>
+                                <div class="recommendation-icon">
+                                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                        xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                        <path
+                                            d="M9 21C9 21.55 9.45 22 10 22H14C14.55 22 15 21.55 15 21V20H9V21ZM12 2C8.14 2 5 5.14 5 9C5 11.38 6.19 13.47 8 14.74V17C8 17.55 8.45 18 9 18H15C15.55 18 16 17.55 16 17V14.74C17.81 13.47 19 11.38 19 9C19 5.14 15.86 2 12 2ZM14.85 13.1L14 13.7V16H10V13.7L9.15 13.1C7.8 12.16 7 10.63 7 9C7 6.24 9.24 4 12 4C14.76 4 17 6.24 17 9C17 10.63 16.2 12.16 14.85 13.1Z"
+                                            fill="currentColor" />
+                                    </svg>
+                                </div>
+                                <div class="recommendation-content">
+                                    <p>Evaluate staffing levels during shoulder season to optimize labor costs</p>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+
+                    <div class="ai-section">
+                        <h4>Market Comparison</h4>
+                        <div class="market-comparison">
+                            <div class="comparison-metric">
+                                <span class="metric-label">RevPAR Index</span>
+                                <div class="metric-bar-container">
+                                    <div class="metric-bar" style="width: 112%;" aria-label="RevPAR Index: 112%"></div>
+                                    <span class="metric-value">112%</span>
+                                </div>
+                            </div>
+                            <div class="comparison-metric">
+                                <span class="metric-label">ADR Index</span>
+                                <div class="metric-bar-container">
+                                    <div class="metric-bar" style="width: 105%;" aria-label="ADR Index: 105%"></div>
+                                    <span class="metric-value">105%</span>
+                                </div>
+                            </div>
+                            <div class="comparison-metric">
+                                <span class="metric-label">Occupancy Index</span>
+                                <div class="metric-bar-container">
+                                    <div class="metric-bar" style="width: 107%;" aria-label="Occupancy Index: 107%">
+                                    </div>
+                                    <span class="metric-value">107%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="ai-chat">
+                    <h4>Ask AI about this document</h4>
+                    <div class="ai-chat-messages" aria-live="polite">
+                        <div class="chat-message user">
+                            <div class="message-avatar">JS</div>
+                            <div class="message-content">
+                                <p>What's driving the increase in RevPAR?</p>
+                            </div>
+                        </div>
+                        <div class="chat-message ai">
+                            <div class="message-avatar">AI</div>
+                            <div class="message-content">
+                                <p>The 12.3% increase in RevPAR is primarily driven by two factors:</p>
+                                <ol>
+                                    <li>A 5.2% increase in occupancy rate (from 74.6% to 78.5%)</li>
+                                    <li>A 6.8% increase in ADR (from $133.29 to $142.35)</li>
+                                </ol>
+                                <p>The occupancy increase is largely due to stronger corporate bookings (Mon-Thu), while
+                                    the ADR increase comes from successful implementation of dynamic pricing during peak
+                                    demand periods and the renovation of premium rooms completed last quarter.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="ai-chat-input">
+                        <label for="ai-question" class="sr-only">Ask a question about this document</label>
+                        <input type="text" id="ai-question" class="chat-input"
+                            placeholder="Ask a question about this document..."
+                            aria-label="Ask a question about this document">
+                        <button class="chat-send-btn" aria-label="Send question">
+                            <svg width="20" height="20" viewBox="0 0 24 24" fill="none"
+                                xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                                <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="#2563EB" />
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" aria-label="Close analysis">Close</button>
+                <button class="btn-primary" aria-label="Export analysis to PDF">Export Analysis</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Document Context Menu -->
+    <div class="context-menu" id="document-context-menu" hidden>
+        <ul class="context-menu-list">
+            <li>
+                <button class="context-menu-item" aria-label="Open document"
+                    onclick="document.location='document-processing.html';return false;">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.82 9L12 12.72L5.18 9L12 5.28L18.82 9ZM17 15.99L12 18.72L7 15.99V12.27L12 15L17 12.27V15.99Z"
+                            fill="currentColor" />
+                    </svg>
+                    Process
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="Open document">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 19H5V5H12V3H5C3.89 3 3 3.9 3 5V19C3 20.1 3.89 21 5 21H19C20.1 21 21 20.1 21 19V12H19V19ZM14 3V5H17.59L7.76 14.83L9.17 16.24L19 6.41V10H21V3H14Z"
+                            fill="currentColor" />
+                    </svg>
+                    Open
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="Download document">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path d="M19 9H15V3H9V9H5L12 16L19 9ZM5 18V20H19V18H5Z" fill="currentColor" />
+                    </svg>
+                    Download
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="Share document">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M18 16.08C17.24 16.08 16.56 16.38 16.04 16.85L8.91 12.7C8.96 12.47 9 12.24 9 12C9 11.76 8.96 11.53 8.91 11.3L15.96 7.19C16.5 7.69 17.21 8 18 8C19.66 8 21 6.66 21 5C21 3.34 19.66 2 18 2C16.34 2 15 3.34 15 5C15 5.24 15.04 5.47 15.09 5.7L8.04 9.81C7.5 9.31 6.79 9 6 9C4.34 9 3 10.34 3 12C3 13.66 4.34 15 6 15C6.79 15 7.5 14.69 8.04 14.19L15.16 18.35C15.11 18.56 15.08 18.78 15.08 19C15.08 20.61 16.39 21.92 18 21.92C19.61 21.92 20.92 20.61 20.92 19C20.92 17.39 19.61 16.08 18 16.08Z"
+                            fill="currentColor" />
+                    </svg>
+                    Share
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="Rename document">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M3 17.25V21H6.75L17.81 9.94L14.06 6.19L3 17.25ZM20.71 7.04C21.1 6.65 21.1 6.02 20.71 5.63L18.37 3.29C17.98 2.9 17.35 2.9 16.96 3.29L15.13 5.12L18.88 8.87L20.71 7.04Z"
+                            fill="currentColor" />
+                    </svg>
+                    Rename
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="Move document">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M14 18V16H10V18H14ZM14 14V12H10V14H14ZM14 10V8H10V10H14ZM19 3H5C3.89 3 3 3.89 3 5V19C3 19.5304 3.21071 20.0391 3.58579 20.4142C3.96086 20.7893 4.46957 21 5 21H19C19.5304 21 20.0391 20.7893 20.4142 20.4142C20.7893 20.0391 21 19.5304 21 19V5C21 3.89 20.1 3 19 3ZM19 19H5V5H19V19Z"
+                            fill="currentColor" />
+                    </svg>
+                    Move
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="Add to favorites">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M12 17.27L18.18 21L16.54 13.97L22 9.24L14.81 8.63L12 2L9.19 8.63L2 9.24L7.46 13.97L5.82 21L12 17.27Z"
+                            fill="currentColor" />
+                    </svg>
+                    Add to Favorites
+                </button>
+            </li>
+            <li class="context-menu-divider"></li>
+            <li>
+                <button class="context-menu-item" aria-label="View version history">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M13 3C8.03 3 4 7.03 4 12H1L4.89 15.89L4.96 16.03L9 12H6C6 8.13 9.13 5 13 5C16.87 5 20 8.13 20 12C20 15.87 16.87 19 13 19C11.07 19 9.32 18.21 8.06 16.94L6.64 18.36C8.27 19.99 10.51 21 13 21C17.97 21 22 16.97 22 12C22 7.03 17.97 3 13 3ZM12 8V13L16.28 15.54L17 14.33L13.5 12.25V8H12Z"
+                            fill="currentColor" />
+                    </svg>
+                    Version History
+                </button>
+            </li>
+            <li>
+                <button class="context-menu-item" aria-label="AI Analysis">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.82 9L12 12.72L5.18 9L12 5.28L18.82 9ZM17 15.99L12 18.72L7 15.99V12.27L12 15L17 12.27V15.99Z"
+                            fill="currentColor" />
+                    </svg>
+                    AI Analysis
+                </button>
+            </li>
+            <li class="context-menu-divider"></li>
+            <li>
+                <button class="context-menu-item context-menu-item-danger" aria-label="Delete document">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M6 19C6 20.1 6.9 21 8 21H16C17.1 21 18 20.1 18 19V7H6V19ZM19 4H15.5L14.5 3H9.5L8.5 4H5V6H19V4Z"
+                            fill="currentColor" />
+                    </svg>
+                    Delete
+                </button>
+            </li>
+        </ul>
+    </div>
+
+    <!-- Confirmation Modal -->
+    <div class="modal" id="confirmation-modal" role="dialog" aria-labelledby="confirmation-modal-title"
+        aria-modal="true" hidden>
+        <div class="modal-content modal-sm">
+            <div class="modal-header">
+                <h2 id="confirmation-modal-title">Confirm Action</h2>
+                <button class="close-modal" aria-label="Close modal">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"
+                        aria-hidden="true">
+                        <path
+                            d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z"
+                            fill="#64748B" />
+                    </svg>
+                </button>
+            </div>
+            <div class="modal-body">
+                <p id="confirmation-message">Are you sure you want to delete this document? This action cannot be
+                    undone.</p>
+            </div>
+            <div class="modal-footer">
+                <button class="btn-secondary" id="cancel-action" aria-label="Cancel action">Cancel</button>
+                <button class="btn-danger" id="confirm-action" aria-label="Confirm action">Delete</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI Assistant Panel -->
+    <!-- <div class="ai-assistant-panel" id="ai-assistant-panel" hidden>
+        <div class="ai-assistant-header">
+            <h3>AI Assistant</h3>
+            <button class="close-ai-assistant" aria-label="Close AI Assistant">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                    <path d="M19 6.41L17.59 5L12 10.59L6.41 5L5 6.41L10.59 12L5 17.59L6.41 19L12 13.41L17.59 19L19 17.59L13.41 12L19 6.41Z" fill="#64748B"/>
+                </svg>
+            </button>
+        </div>
+        <div class="ai-assistant-body">
+            <div class="ai-assistant-conversation">
+                <div class="ai-message">
+                    <div class="ai-avatar">AI</div>
+                    <div class="ai-message-content">
+                        <p>Hello! I'm your AI assistant for the Documents repository. How can I help you today?</p>
+                    </div>
+                </div>
+            </div>
+            <div class="ai-assistant-input">
+                <label for="ai-prompt" class="sr-only">Ask AI Assistant</label>
+                <textarea id="ai-prompt" class="ai-prompt-input" placeholder="Ask a question..." aria-label="Ask AI Assistant"></textarea>
+                <button class="ai-send-btn" aria-label="Send message">
+                    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M2.01 21L23 12L2.01 3L2 10L17 12L2 14L2.01 21Z" fill="#FFFFFF"/>
+                    </svg>
+                </button>
+            </div>
+            <div class="ai-assistant-tools">
+                <button class="ai-tool-btn" aria-label="Analyze document">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M12 3L1 9L5 11.18V17.18L12 21L19 17.18V11.18L21 10.09V17H23V9L12 3ZM18.82 9L12 12.72L5.18 9L12 5.28L18.82 9ZM17 15.99L12 18.72L7 15.99V12.27L12 15L17 12.27V15.99Z" fill="currentColor"/>
+                    </svg>
+                    Analyze Document
+                </button>
+                <button class="ai-tool-btn" aria-label="Summarize document">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM19 19H5V5H19V19Z" fill="currentColor"/>
+                        <path d="M7 7H17V9H7V7ZM7 11H17V13H7V11ZM7 15H14V17H7V15Z" fill="currentColor"/>
+                    </svg>
+                    Summarize
+                </button>
+                <button class="ai-tool-btn" aria-label="Extract data from document">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M19 3H5C3.9 3 3 3.9 3 5V19C3 20.1 3.9 21 5 21H19C20.1 21 21 20.1 21 19V5C21 3.9 20.1 3 19 3ZM9 17H7V10H9V17ZM13 17H11V7H13V17ZM17 17H15V13H17V17Z" fill="currentColor"/>
+                    </svg>
+                    Extract Data
+                </button>
+                <button class="ai-tool-btn" aria-label="Compare documents">
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+                        <path d="M9.01 14H2V16H9.01V19L13 15L9.01 11V14ZM14.99 13V10H22V8H14.99V5L11 9L14.99 13Z" fill="currentColor"/>
+                    </svg>
+                    Compare
+                </button>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- Toast Container -->
+    <div class="toast-container" id="toast-container"></div>
+
+    <!-- Loading Overlay -->
+    <!-- <div class="loading-overlay" id="loading-overlay" hidden>
+        <div class="spinner">
+            <div class="spinner-circle"></div>
+        </div>
+        <p class="loading-text">Loading...</p>
+    </div> -->
+
+    <!-- Hidden elements for screen readers -->
+    <div class="sr-only" aria-live="polite" id="notification-area"></div>
+
+    <script src="js/documents.js"></script>
+</body>
+
+</html>

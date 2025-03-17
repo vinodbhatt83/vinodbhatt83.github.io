@@ -150,7 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
     function handleSaveTask() {
         // Validate form
         if (!taskTitleInput.value.trim()) {
-            showNotification('Please enter a task title', 'error');
+            //showNotification('Please enter a task title', 'error');
             return;
         }
 
@@ -170,10 +170,10 @@ document.addEventListener('DOMContentLoaded', function () {
         // For demo purposes, we'll just update the UI
         if (taskIdInput.value) {
             updateTaskInUI(taskData);
-            showNotification('Task updated successfully', 'success');
+            //showNotification('Task updated successfully', 'success');
         } else {
             addTaskToUI(taskData);
-            showNotification('Task created successfully', 'success');
+            //showNotification('Task created successfully', 'success');
         }
 
         // Close modal
